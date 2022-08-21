@@ -36,11 +36,13 @@
 <script>
 import ProductService from "../service/ProductService";
 import PhotoService from "../service/PhotoService";
+
 export default {
     data() {
         return {
             products: [],
             images: [],
+            
             galleriaResponsiveOptions: [
                 {
                     breakpoint: "1024px",
@@ -90,6 +92,7 @@ export default {
             this.images = images;
         });
     },
+    
 };
 </script>
 

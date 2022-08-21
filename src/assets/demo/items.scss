@@ -2,12 +2,12 @@
     .product-item-content {
         border: 1px solid var(--surface-d);
         border-radius: 3px;
-        margin: 3rem;
+        margin: 1rem; //cardni margini
         text-align: center;
         padding: 2.5rem 0; //cardni paddingi
     }
     .product-image {
-        width: 50%;
+        width: 90%;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
 }

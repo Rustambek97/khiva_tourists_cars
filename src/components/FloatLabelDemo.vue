@@ -12,14 +12,14 @@
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
-                                        {{ product.data.name }}
+                                        
                                     </h4>
-                                    <h6 class="mt-0 mb-3">${{ product.data.price }}</h6>
-                                    <span :class="'product-badge status-' + product.data.inventoryStatus.toLowerCase()">{{ product.data.inventoryStatus }}</span>
+                                    <h6 class="mt-0 mb-3">
+                                        
+                                    </h6>
+                                    
                                     <div class="car-buttons mt-5">
-                                        <Button type="button" class="p-button p-button-rounded mr-2" icon="pi pi-search"></Button>
-                                        <Button type="button" class="p-button-success p-button-rounded mr-2" icon="pi pi-star-fill"></Button>
-                                        <Button type="button" class="p-button-help p-button-rounded" icon="pi pi-cog"></Button>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -34,6 +34,7 @@
 </template>
 
 <script>
+
 import ProductService from "../service/ProductService";
 import PhotoService from "../service/PhotoService";
 export default {
@@ -97,3 +98,4 @@ export default {
 @import '../assets/demo/badges.scss';
 @import '../assets/demo/items.scss';
 </style> 
+
