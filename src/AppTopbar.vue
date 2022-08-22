@@ -48,8 +48,7 @@ export default {
 					{name: 'FRA', code: 'FRA'},
 					{name: 'GER', code: 'GER'}
 				],
-			dropdownValue: null,
-			
+				dropdownValue: null,
 		}
 	},
     methods: {

@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (min-width: 1064px) { //1064 px dan keyin sidebar ochiladi
     .layout-wrapper {
         &.layout-overlay {
             .layout-main-container {
@@ -46,7 +46,7 @@
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1063px) { //1063px dan keyin sidebar yopiladi
     .layout-wrapper {
         .layout-main-container {
             margin-left: 0;
