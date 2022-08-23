@@ -40,6 +40,9 @@
                                         </TabView>
                                    
                                 </div>
+                                <div>
+                                    <Button label="READ MORE" class="mr-2 mb-2"/>
+                                </div>
                             </div>
                         </div>
                     </template>
@@ -58,25 +61,6 @@ export default {
         return {
             products: [],
             images: [],
-            
-            // galleriaResponsiveOptions: [
-            //     {
-            //         breakpoint: "1024px",
-            //         numVisible: 5,
-            //     },
-            //     {
-            //         breakpoint: "960px",
-            //         numVisible: 4,
-            //     },
-            //     {
-            //         breakpoint: "768px",
-            //         numVisible: 3,
-            //     },
-            //     {
-            //         breakpoint: "560px",
-            //         numVisible: 1,
-            //     },
-            // ],
             carouselResponsiveOptions: [
                 {
                     breakpoint: "1500px",

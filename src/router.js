@@ -20,7 +20,7 @@ const routes = [
             {
                 path: '/input',
                 name: 'input',
-                component: () => import('./components/Input.vue')
+                component: () => import('./components/InputDemo.vue')
             },
             {
                 path: '/floatlabel',
