@@ -38,36 +38,36 @@ export default {
                     label: 'Home',
                     items: [{
                         label: 'Travel places', icon: 'pi pi-fw pi-home', to: '/',
-                        items: [
-                                {label: 'About place', icon: 'pi pi-fw pi-bookmark',},
-                                {label: 'Place maps', icon: 'pi pi-fw pi-bookmark',},
-                                {label: "Cars table", icon: 'pi pi-fw pi-bookmark',},
-                                {label: 'Place photos', icon: 'pi pi-fw pi-bookmark',},
-                                {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
-                            ]
+                        // items: [
+                        //         {label: 'About place', icon: 'pi pi-fw pi-bookmark',},
+                        //         {label: 'Place maps', icon: 'pi pi-fw pi-bookmark',},
+                        //         {label: "Cars table", icon: 'pi pi-fw pi-bookmark',},
+                        //         {label: 'Place photos', icon: 'pi pi-fw pi-bookmark',},
+                        //         {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
+                        //     ]
                     }]
                 },
 				{
 					label: 'Services', icon: 'pi pi-fw pi-sitemap',
 					items: [
 						{label: 'Cars', icon: 'pi pi-fw pi-car', to: '/formlayout',
-                        items: [
-                                {label: 'Travel table', icon: 'pi pi-fw pi-bookmark',},
-                                {label: 'Cars photos', icon: 'pi pi-fw pi-bookmark',},
-                                {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
-                            ]
+                        // items: [
+                        //         {label: 'Travel table', icon: 'pi pi-fw pi-bookmark',},
+                        //         {label: 'Cars photos', icon: 'pi pi-fw pi-bookmark',},
+                        //         {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
+                        //     ]
                         },
 						{label: 'Gits', icon: 'pi pi-fw pi-user', to: '/input',
-                        items: [
-                                {label: 'Travel table', icon: 'pi pi-fw pi-bookmark',},
-                                {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
-                            ]
+                        // items: [
+                        //         {label: 'Travel table', icon: 'pi pi-fw pi-bookmark',},
+                        //         {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
+                        //     ]
                         },
                         {label: "Galleria", icon: "pi pi-fw pi-image", to: "/floatlabel",
-                        items: [
-                                {label: 'About place', icon: 'pi pi-fw pi-bookmark',},
-                                {label: 'Place maps', icon: 'pi pi-fw pi-bookmark',},
-                            ]
+                        // items: [
+                        //         {label: 'About place', icon: 'pi pi-fw pi-bookmark',},
+                        //         {label: 'Place maps', icon: 'pi pi-fw pi-bookmark',},
+                        //     ]
                         },
                         {label: "About us", icon: "pi pi-fw pi-exclamation-circle", to: "/invalidstate",                        },
 						

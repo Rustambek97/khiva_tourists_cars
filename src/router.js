@@ -30,7 +30,7 @@ const routes = [
             {
                 path: '/invalidstate',
                 name: 'invalidstate',
-                component: () => import('./components/InvalidStateDemo.vue')
+                component: () => import('./components/OverlayDemo.vue')
             },
         ]
     },
