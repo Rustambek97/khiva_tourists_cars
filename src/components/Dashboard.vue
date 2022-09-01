@@ -2,20 +2,389 @@
     <div class="grid p-fluid">
         <div class="col-12">
             <div class="card">
-                <h5>Travel places</h5>
+                <!-- one -->
+                <h5>Daytrips to The Ancient Khorezm Fortresses</h5>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
-                                <div class="mb-3">
+                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
                                     <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
                                         {{ product.data.name }}
                                     </h4>
-                                    <h6 class="mt-0 mb-3">
+                                    <h6 class="mt-0 mb-2">
                                         ${{ product.data.price }}
+                                    </h6>
+                                    <h6 class="mt-0 mb-1">
+                                        {{ product.data.description }}
+                                    </h6>
+                                </div>
+                                
+                                <div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
+                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true">
+                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name"/>
+                                        </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
+                                        <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
+                                            <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
+                                                <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
+                                                <Column header="Image" headerStyle="min-width:10rem;">
+                                                    <template #body="slotProps">
+                                                        <img :src="'images/product/' + slotProps.data.image" :alt="slotProps.data.image" width="100" class="shadow-2" />
+                                                    </template>
+                                                </Column>
+                                                <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
+                                                    <template #body="slotProps">
+                                                        {{formatCurrency(slotProps.data.price)}}
+                                                    </template>
+                                                </Column>
+                                            </DataTable>
+                                        </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                   
+                                            <Button type="button" label="Galleria" @click="toggleGalleria" class="p-button-success"/>
+                                            <OverlayPanel ref="op3" appendTo="body" :showCloseIcon="true">
+                                                <Galleria :value="images" :responsiveOptions="galleriaResponsiveOptions" :numVisible="7" :circular="true" containerStyle="max-width: 300px; margin: auto">
+                                                    <template #item="slotProps">
+                                                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
+                                                    </template>
+                                                    <template #thumbnail="slotProps">
+                                                        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
+                                                    </template>
+                                                </Galleria>
+                                            </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Data" @click="toggleData" class="p-button-success"/>
+                                        <OverlayPanel style="width: 25rem" ref="op4" appendTo="body" :showCloseIcon="true">
+                                            <TabView style="text-align: justify;">
+                                                <TabPanel header="Header I">
+                                                    <p class="line-height-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></TabPanel>
+                                                <TabPanel header="Header II">
+                                                    <p class="line-height-3 m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                                        Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                                                </TabPanel>
+                                                <TabPanel header="Header III">
+                                                    <p class="line-height-3 m-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                                                        et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                                        quo minus.</p>
+                                                </TabPanel>
+                                            </TabView>
+                                        </OverlayPanel>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </template>
+                    
+                </Carousel>
+                <!-- two -->
+                <h5>Daytrips to the Muynak Ship Cemetery and Nukus Art Galery</h5>
+                <Carousel :value="products2" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
+                    <template #item="product">
+                        <div class="product-item">
+                            <div class="product-item-content">
+                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                    <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">
+                                        {{ product.data.name }}
+                                    </h4>
+                                    <h6 class="mt-0 mb-2">
+                                        ${{ product.data.price }}
+                                    </h6>
+                                    <h6 class="mt-0 mb-1">
+                                        {{ product.data.description }}
+                                    </h6>
+                                </div>
+                                
+                                <div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
+                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
+                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
+                                        </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
+                                        <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
+                                            <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
+                                                <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
+                                                <Column header="Image" headerStyle="min-width:10rem;">
+                                                    <template #body="slotProps">
+                                                        <img :src="'images/product/' + slotProps.data.image" :alt="slotProps.data.image" width="100" class="shadow-2" />
+                                                    </template>
+                                                </Column>
+                                                <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
+                                                    <template #body="slotProps">
+                                                        {{formatCurrency(slotProps.data.price)}}
+                                                    </template>
+                                                </Column>
+                                            </DataTable>
+                                        </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                   
+                                            <Button type="button" label="Galleria" @click="toggleGalleria" class="p-button-success"/>
+                                            <OverlayPanel ref="op3" appendTo="body" :showCloseIcon="true">
+                                                <Galleria :value="images" :responsiveOptions="galleriaResponsiveOptions" :numVisible="7" :circular="true" containerStyle="max-width: 300px; margin: auto">
+                                                    <template #item="slotProps">
+                                                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
+                                                    </template>
+                                                    <template #thumbnail="slotProps">
+                                                        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
+                                                    </template>
+                                                </Galleria>
+                                            </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Data" @click="toggleData" class="p-button-success"/>
+                                        <OverlayPanel style="width: 25rem" ref="op4" appendTo="body" :showCloseIcon="true">
+                                            <TabView style="text-align: justify;">
+                                                <TabPanel header="Header I">
+                                                    <p class="line-height-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></TabPanel>
+                                                <TabPanel header="Header II">
+                                                    <p class="line-height-3 m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                                        Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                                                </TabPanel>
+                                                <TabPanel header="Header III">
+                                                    <p class="line-height-3 m-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                                                        et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                                        quo minus.</p>
+                                                </TabPanel>
+                                            </TabView>
+                                        </OverlayPanel>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </template>
+                    
+                </Carousel>
+
+                <!-- three -->
+                <h5>Daytrips between Khiva and Nukus or/and Nukus and Khiva</h5>
+                <Carousel :value="products3" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
+                    <template #item="product">
+                        <div class="product-item">
+                            <div class="product-item-content">
+                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                    <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">
+                                        {{ product.data.name }}
+                                    </h4>
+                                    <h6 class="mt-0 mb-2">
+                                        ${{ product.data.price }}
+                                    </h6>
+                                    <h6 class="mt-0 mb-1">
+                                        {{ product.data.description }}
+                                    </h6>
+                                </div>
+                                
+                                <div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
+                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
+                                            <img src="images/nature/03.jpg" alt="03" />
+                                        </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
+                                        <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
+                                            <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
+                                                <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
+                                                <Column header="Image" headerStyle="min-width:10rem;">
+                                                    <template #body="slotProps">
+                                                        <img :src="'images/product/' + slotProps.data.image" :alt="slotProps.data.image" width="100" class="shadow-2" />
+                                                    </template>
+                                                </Column>
+                                                <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
+                                                    <template #body="slotProps">
+                                                        {{formatCurrency(slotProps.data.price)}}
+                                                    </template>
+                                                </Column>
+                                            </DataTable>
+                                        </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                   
+                                            <Button type="button" label="Galleria" @click="toggleGalleria" class="p-button-success"/>
+                                            <OverlayPanel ref="op3" appendTo="body" :showCloseIcon="true">
+                                                <Galleria :value="images" :responsiveOptions="galleriaResponsiveOptions" :numVisible="7" :circular="true" containerStyle="max-width: 300px; margin: auto">
+                                                    <template #item="slotProps">
+                                                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
+                                                    </template>
+                                                    <template #thumbnail="slotProps">
+                                                        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
+                                                    </template>
+                                                </Galleria>
+                                            </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Data" @click="toggleData" class="p-button-success"/>
+                                        <OverlayPanel style="width: 25rem" ref="op4" appendTo="body" :showCloseIcon="true">
+                                            <TabView style="text-align: justify;">
+                                                <TabPanel header="Header I">
+                                                    <p class="line-height-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></TabPanel>
+                                                <TabPanel header="Header II">
+                                                    <p class="line-height-3 m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                                        Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                                                </TabPanel>
+                                                <TabPanel header="Header III">
+                                                    <p class="line-height-3 m-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                                                        et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                                        quo minus.</p>
+                                                </TabPanel>
+                                            </TabView>
+                                        </OverlayPanel>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </template>
+                    
+                </Carousel>
+
+                <!-- four -->
+                <h5>Daytrips between Khiva and Bukhara or/and Bukhara and Khiva</h5>
+                <Carousel :value="products4" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
+                    <template #item="product">
+                        <div class="product-item">
+                            <div class="product-item-content">
+                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                    <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">
+                                        {{ product.data.name }}
+                                    </h4>
+                                    <h6 class="mt-0 mb-2">
+                                        ${{ product.data.price }}
+                                    </h6>
+                                    <h6 class="mt-0 mb-1">
+                                        {{ product.data.description }}
+                                    </h6>
+                                </div>
+                                
+                                <div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
+                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
+                                            <img src="images/nature/04.jpg" alt="04" />
+                                        </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
+                                        <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
+                                            <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
+                                                <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
+                                                <Column header="Image" headerStyle="min-width:10rem;">
+                                                    <template #body="slotProps">
+                                                        <img :src="'images/product/' + slotProps.data.image" :alt="slotProps.data.image" width="100" class="shadow-2" />
+                                                    </template>
+                                                </Column>
+                                                <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
+                                                    <template #body="slotProps">
+                                                        {{formatCurrency(slotProps.data.price)}}
+                                                    </template>
+                                                </Column>
+                                            </DataTable>
+                                        </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                   
+                                            <Button type="button" label="Galleria" @click="toggleGalleria" class="p-button-success"/>
+                                            <OverlayPanel ref="op3" appendTo="body" :showCloseIcon="true">
+                                                <Galleria :value="images" :responsiveOptions="galleriaResponsiveOptions" :numVisible="7" :circular="true" containerStyle="max-width: 300px; margin: auto">
+                                                    <template #item="slotProps">
+                                                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
+                                                    </template>
+                                                    <template #thumbnail="slotProps">
+                                                        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
+                                                    </template>
+                                                </Galleria>
+                                            </OverlayPanel>
+                                    </div>
+                                    <div class="col-12">
+                                        <Button type="button" label="Data" @click="toggleData" class="p-button-success"/>
+                                        <OverlayPanel style="width: 25rem" ref="op4" appendTo="body" :showCloseIcon="true">
+                                            <TabView style="text-align: justify;">
+                                                <TabPanel header="Header I">
+                                                    <p class="line-height-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></TabPanel>
+                                                <TabPanel header="Header II">
+                                                    <p class="line-height-3 m-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                                                        Consectetur, adipisci velit, sed quia non numquam eius modi.</p>
+                                                </TabPanel>
+                                                <TabPanel header="Header III">
+                                                    <p class="line-height-3 m-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+                                                        et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                                        quo minus.</p>
+                                                </TabPanel>
+                                            </TabView>
+                                        </OverlayPanel>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </Carousel>
+
+                <!-- five -->
+                <h5>Aral Sea Adventures for 2 days and 1 night</h5>
+                <Carousel :value="products5" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
+                    <template #item="product">
+                        <div class="product-item">
+                            <div class="product-item-content">
+                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                    <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
+                                </div>
+                                <div>
+                                    <h4 class="mb-1">
+                                        {{ product.data.name }}
+                                    </h4>
+                                    <h6 class="mt-0 mb-2">
+                                        ${{ product.data.price }}
+                                    </h6>
+                                    <h6 class="mt-0 mb-1">
+                                        {{ product.data.description }}
                                     </h6>
                                 </div>
                                 
@@ -85,11 +454,8 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </template>
-                    
                 </Carousel>
-                
             </div>
         </div>
     </div>
@@ -103,6 +469,10 @@ export default {
     data() {
         return {
             products: [],
+            products2: [],
+            products3: [],
+            products4: [],
+            products5: [],
             images: [],
             carouselResponsiveOptions: [
                 {
@@ -130,6 +500,18 @@ export default {
     mounted() {
         this.productService.getProductsSmall().then((products) => {
             this.products = products;
+        });
+        this.productService.getProductsSmall2().then((products2) => {
+            this.products2 = products2;
+        });
+        this.productService.getProductsSmall3().then((products3) => {
+            this.products3 = products3;
+        });
+        this.productService.getProductsSmall4().then((products4) => {
+            this.products4 = products4;
+        });
+        this.productService.getProductsSmall5().then((products5) => {
+            this.products5 = products5;
         });
         this.photoService.getImages().then((images) => {
             this.images = images;
@@ -187,4 +569,9 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/demo/badges.scss';
 @import '../assets/demo/items.scss';
+h5 {
+    margin-bottom: -0.5rem;
+    text-align: center;
+}
+
 </style> 
