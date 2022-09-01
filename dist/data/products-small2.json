@@ -1,0 +1,52 @@
+{
+	"data": [
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Daytrips to The Ancient Khorezm Fortresses",
+			"description": "Khiva -> Chodra Hauli -> Ulli Hovli -> Kalajik Kala & Salty Lake  -> Khiva",
+			"image": "11.Kalajik kala.jpg",
+			"price": "From $24 to $189 for one car",
+			"category": "Accessories",
+			"quantity": 24,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5
+		},
+		{
+			"id": "1001",
+			"code": "nvklal433",
+			"name": "Daytrips between Khiva and Nukus orand Nukus and Khiva",
+			"description": "Khiva -> Chilpik Kala -> Nukus Art Museum -> Mizdakhan Necropolis  -> Khiva",
+			"image": "12.Chilpik kala.jpg",
+			"price": "From $59 to $469 for one car",
+			"category": "Accessories",
+			"quantity": 61,
+			"inventoryStatus": "INSTOCK",
+			"rating": 4
+		},
+		{
+			"id": "1002",
+			"code": "zz21cz3c1",
+			"name": "Travel A day trip to Ships cemetery, Muynak, Aral Sea from Nukus",
+			"description": "Khiva -> Chilpik Kala -> Nukus Art Museum -> Mizdakhan Necropolis  -> Aral Sea Museum -> Muynak Ship Cemetery -> Khiva",
+			"image": "13.Nukus art museum.jpg",
+			"price": "From $79 to $989 for one car",
+			"category": "Fitness",
+			"quantity": 2,
+			"inventoryStatus": "LOWSTOCK",
+			"rating": 3
+		},
+		{
+			"id": "1003",
+			"code": "244wgerg2",
+			"name": "Blue T-Shirt",
+			"description": "Nukus -> Nukus Art Museum -> Mizdakhan Necropolis  -> Aral Sea Museum -> Muynak Ship Cemetery -> Nukus",
+			"image": "14.Mizdakhan.jpg",
+			"price": "From $59 to $369 for one car",
+			"category": "Clothing",
+			"quantity": 25,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5
+		}
+	]
+}
