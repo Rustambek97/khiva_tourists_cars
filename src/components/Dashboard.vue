@@ -8,7 +8,7 @@
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
-                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                <div class="mb-3" >
                                     <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
                                 <div>
@@ -99,7 +99,7 @@
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
-                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                <div class="mb-3" >
                                     <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
                                 <div>
@@ -191,7 +191,7 @@
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
-                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                <div class="mb-3" >
                                     <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
                                 </div>
                                 <div>
@@ -283,7 +283,7 @@
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
-                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                <div class="mb-3" >
                                     <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
                                 </div>
                                 <div>
@@ -373,7 +373,7 @@
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
-                                <div class="mb-3" style="height: 14rem; overflow: hidden;">
+                                <div class="mb-3" >
                                     <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
                                 </div>
                                 <div>
