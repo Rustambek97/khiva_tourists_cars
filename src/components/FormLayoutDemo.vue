@@ -2,13 +2,13 @@
     <div class="grid p-fluid">
         <div class="col-12">
             <div class="card">
-                <h5>Travel places</h5>
+                <h5>Gits for Travel</h5>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3">
-                                    <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
+                                    <img :src="'images/gits/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
@@ -52,9 +52,9 @@
                                                     <template #item="slotProps">
                                                         <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
                                                     </template>
-                                                    <template #thumbnail="slotProps">
+                                                    <!-- <template #thumbnail="slotProps">
                                                         <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
-                                                    </template>
+                                                    </template> -->
                                                 </Galleria>
                                             </OverlayPanel>
                                     </div>
@@ -128,7 +128,7 @@ export default {
         this.photoService = new PhotoService();
     },
     mounted() {
-        this.productService.getProductsSmall().then((products) => {
+        this.productService.getGits().then((products) => {
             this.products = products;
         });
         this.photoService.getImages().then((images) => {

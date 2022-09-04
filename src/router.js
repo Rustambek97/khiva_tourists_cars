@@ -20,17 +20,17 @@ const routes = [
             {
                 path: '/input',
                 name: 'input',
-                component: () => import('./components/InputDemo.vue')
+                component: () => import('./components/FormLayoutDemo.vue')
             },
             {
                 path: '/floatlabel',
                 name: 'floatlabel',
-                component: () => import('./components/FloatLabelDemo.vue')
+                component: () => import('./components/InputDemo.vue')
             },
             {
                 path: '/invalidstate',
                 name: 'invalidstate',
-                component: () => import('./components/OverlayDemo.vue')
+                component: () => import('./components/InvalidStateDemo.vue')
             },
         ]
     },

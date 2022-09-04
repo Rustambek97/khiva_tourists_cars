@@ -2,13 +2,13 @@
     <div class="grid p-fluid">
         <div class="col-12">
             <div class="card">
-                <h5>Travel places</h5>
+                <h5>Cars for Travels</h5>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3">
-                                    <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
+                                    <img :src="'images/cars/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
@@ -21,13 +21,7 @@
                                 
                                 <div>
                                     <div class="col-12">
-                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
-                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
-                                            <img src="images/nature/nature9.jpg" alt="Nature 9" />
-                                        </OverlayPanel>
-                                    </div>
-                                    <div class="col-12">
-                                        <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
+                                        <Button type="button" label="Price for Travels" @click="toggleDataTable" class="p-button-success"/>
                                         <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
                                             <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
                                                 <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
@@ -52,9 +46,9 @@
                                                     <template #item="slotProps">
                                                         <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
                                                     </template>
-                                                    <template #thumbnail="slotProps">
+                                                    <!-- <template #thumbnail="slotProps">
                                                         <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
-                                                    </template>
+                                                    </template> -->
                                                 </Galleria>
                                             </OverlayPanel>
                                     </div>
@@ -128,7 +122,7 @@ export default {
         this.photoService = new PhotoService();
     },
     mounted() {
-        this.productService.getProductsSmall().then((products) => {
+        this.productService.getProducts().then((products) => {
             this.products = products;
         });
         this.photoService.getImages().then((images) => {

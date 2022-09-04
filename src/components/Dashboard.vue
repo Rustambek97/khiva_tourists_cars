@@ -25,14 +25,13 @@
                                 
                                 <div>
                                     <div class="col-12">
-                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
-                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true">
-                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name"/>
-                                        </OverlayPanel>
+                                        <Dialog header="Maps" v-model:visible="display" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
+                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" style="width: 100%;"/>
+                                        </Dialog>    
+                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/> 
                                     </div>
                                     <div class="col-12">
-                                        <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
-                                        <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
+                                        <Dialog header="Cars" v-model:visible="display2" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
                                             <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
                                                 <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
                                                 <Column header="Image" headerStyle="min-width:10rem;">
@@ -46,25 +45,26 @@
                                                     </template>
                                                 </Column>
                                             </DataTable>
-                                        </OverlayPanel>
+
+                                        </Dialog>    
+                                        <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>       
                                     </div>
                                     <div class="col-12">
-                                   
-                                            <Button type="button" label="Galleria" @click="toggleGalleria" class="p-button-success"/>
-                                            <OverlayPanel ref="op3" appendTo="body" :showCloseIcon="true">
-                                                <Galleria :value="images" :responsiveOptions="galleriaResponsiveOptions" :numVisible="7" :circular="true" containerStyle="max-width: 300px; margin: auto">
+                                            <Dialog header="Galleria" v-model:visible="display3" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
+                                                <Galleria :value="images" :responsiveOptions="galleriaResponsiveOptions" :numVisible="7" :circular="true" containerStyle="width: 100%; margin: auto">
                                                     <template #item="slotProps">
                                                         <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
                                                     </template>
-                                                    <template #thumbnail="slotProps">
+                                                    <!-- <template #thumbnail="slotProps">
                                                         <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
-                                                    </template>
-                                                </Galleria>
-                                            </OverlayPanel>
+                                                    </template> -->
+                                                </Galleria>    
+                                            </Dialog>
+                                            <Button type="button" label="Galleria" @click="toggleGalleria" class="p-button-success"/>
+                                            
                                     </div>
                                     <div class="col-12">
-                                        <Button type="button" label="Data" @click="toggleData" class="p-button-success"/>
-                                        <OverlayPanel style="width: 25rem" ref="op4" appendTo="body" :showCloseIcon="true">
+                                        <Dialog header="Data" v-model:visible="display4" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
                                             <TabView style="text-align: justify;">
                                                 <TabPanel header="Header I">
                                                     <p class="line-height-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -84,7 +84,10 @@
                                                         quo minus.</p>
                                                 </TabPanel>
                                             </TabView>
-                                        </OverlayPanel>
+                                        </Dialog>    
+                                         
+                                        <Button type="button" label="Data" @click="toggleData" class="p-button-success"/>
+                                       
                                 </div>
                                 </div>
                             </div>
@@ -147,9 +150,9 @@
                                                     <template #item="slotProps">
                                                         <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
                                                     </template>
-                                                    <template #thumbnail="slotProps">
+                                                    <!-- <template #thumbnail="slotProps">
                                                         <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
-                                                    </template>
+                                                    </template> -->
                                                 </Galleria>
                                             </OverlayPanel>
                                     </div>
@@ -192,7 +195,7 @@
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3" >
-                                    <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
+                                    <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
@@ -210,7 +213,7 @@
                                     <div class="col-12">
                                         <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
                                         <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
-                                            <img src="images/nature/03.jpg" alt="03" />
+                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
                                         </OverlayPanel>
                                     </div>
                                     <div class="col-12">
@@ -239,9 +242,9 @@
                                                     <template #item="slotProps">
                                                         <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
                                                     </template>
-                                                    <template #thumbnail="slotProps">
+                                                    <!-- <template #thumbnail="slotProps">
                                                         <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
-                                                    </template>
+                                                    </template> -->
                                                 </Galleria>
                                             </OverlayPanel>
                                     </div>
@@ -284,7 +287,7 @@
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3" >
-                                    <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
+                                    <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
@@ -302,7 +305,7 @@
                                     <div class="col-12">
                                         <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
                                         <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
-                                            <img src="images/nature/04.jpg" alt="04" />
+                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
                                         </OverlayPanel>
                                     </div>
                                     <div class="col-12">
@@ -331,9 +334,9 @@
                                                     <template #item="slotProps">
                                                         <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
                                                     </template>
-                                                    <template #thumbnail="slotProps">
+                                                    <!-- <template #thumbnail="slotProps">
                                                         <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
-                                                    </template>
+                                                    </template> -->
                                                 </Galleria>
                                             </OverlayPanel>
                                     </div>
@@ -374,7 +377,7 @@
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3" >
-                                    <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
+                                    <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
@@ -392,7 +395,7 @@
                                     <div class="col-12">
                                         <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
                                         <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
-                                            <img src="images/nature/nature9.jpg" alt="Nature 9" />
+                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
                                         </OverlayPanel>
                                     </div>
                                     <div class="col-12">
@@ -421,9 +424,9 @@
                                                     <template #item="slotProps">
                                                         <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
                                                     </template>
-                                                    <template #thumbnail="slotProps">
+                                                    <!-- <template #thumbnail="slotProps">
                                                         <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
-                                                    </template>
+                                                    </template> -->
                                                 </Galleria>
                                             </OverlayPanel>
                                     </div>
@@ -468,6 +471,11 @@ import PhotoService from "../service/PhotoService";
 export default {
     data() {
         return {
+            display: false,
+            display2: false,
+            display3: false,
+            display4: false,
+			displayConfirmation: false,
             products: [],
             products2: [],
             products3: [],
@@ -516,11 +524,12 @@ export default {
         this.photoService.getImages().then((images) => {
             this.images = images;
         });
+       
     },
     methods: {
-			open() {
-				this.display = true;
-			},
+			// open() {
+            //     this.display = true;
+			// },
 			close() {
 				this.display = false;
 			},
@@ -531,15 +540,19 @@ export default {
 				this.displayConfirmation = false;
 			},
 			toggle(event) {
+                this.display = true;
 				this.$refs.op.toggle(event);
 			},
 			toggleDataTable(event) {
-				this.$refs.op2.toggle(event);
+                this.display2 = true;
+				this.$refs.op2.toggleDataTable(event);
 			},
             toggleGalleria(event) {
+                this.display3 = true;
 				this.$refs.op3.toggle(event);
 			},
             toggleData(event) {
+                this.display4 = true;
 				this.$refs.op4.toggle(event);
 			},
 			formatCurrency(value) {
