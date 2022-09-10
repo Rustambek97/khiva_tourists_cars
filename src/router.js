@@ -8,29 +8,34 @@ const routes = [
         component: App,
         children: [
             {
-                path: '',
-                name: 'dashboard',
-                component: () => import('./components/Dashboard.vue')
+                path: '/',
+                name: 'airport',
+                component: () => import('./components/Airport.vue')
             },
             {
-                path: '/formlayout',
-                name: 'formlayout',
-                component: () => import('./components/FloatLabelDemo.vue')
+                path: '/travels',
+                name: 'travels',
+                component: () => import('./components/Travels.vue')
             },
             {
-                path: '/input',
-                name: 'input',
-                component: () => import('./components/FormLayoutDemo.vue')
+                path: '/cars',
+                name: 'cars',
+                component: () => import('./components/Cars.vue')
             },
             {
-                path: '/floatlabel',
-                name: 'floatlabel',
-                component: () => import('./components/InputDemo.vue')
+                path: '/gits',
+                name: 'gits',
+                component: () => import('./components/Gits.vue')
             },
             {
-                path: '/invalidstate',
-                name: 'invalidstate',
-                component: () => import('./components/InvalidStateDemo.vue')
+                path: '/galleria',
+                name: 'galleria',
+                component: () => import('./components/Galleria.vue')
+            },
+            {
+                path: '/about_us',
+                name: 'about_us',
+                component: () => import('./components/About_Us.vue')
             },
         ]
     },

@@ -47,54 +47,6 @@
 			"quantity": 25,
 			"inventoryStatus": "INSTOCK",
 			"rating": 5
-		},
-		{
-			"id": "1004",
-			"code": "h456wer53",
-			"name": "Nukus- Chilpik Kala - Khiva",
-			"description": "Product Description",
-			"image": "35.Khiva1.jpg",
-			"price": 15,
-			"category": "Accessories",
-			"quantity": 73,
-			"inventoryStatus": "INSTOCK",
-			"rating": 4
-		},
-		{
-			"id": "1005",
-			"code": "av2231fwg",
-			"name": "Nukus- Four Castles - Khiva",
-			"description": "Product Description",
-			"image": "36.Qizil kala.jpg",
-			"price": 120,
-			"category": "Accessories",
-			"quantity": 0,
-			"inventoryStatus": "OUTOFSTOCK",
-			"rating": 4
-		},
-		{
-			"id": "1006",
-			"code": "bib36pfvm",
-			"name": "Nukus- Three Castles - Khiva",
-			"description": "Product Description",
-			"image": "37.Jampik kala.jpg",
-			"price": 32,
-			"category": "Accessories",
-			"quantity": 5,
-			"inventoryStatus": "LOWSTOCK",
-			"rating": 3
-		},
-		{
-			"id": "1007",
-			"code": "mbvjkgip5",
-			"name": "Nukus- Six Castles - Khiva",
-			"description": "Product Description",
-			"image": "38.Ayaz kala.jpg",
-			"price": 34,
-			"category": "Accessories",
-			"quantity": 23,
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
 		}
 	]
 }

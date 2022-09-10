@@ -37,7 +37,7 @@ export default {
                 {
                     label: 'Home',
                     items: [{
-                        label: 'Travel places', icon: 'pi pi-fw pi-home', to: '/',
+                        label: 'Airport', icon: 'pi pi-fw pi-home', to: '/',
                         // items: [
                         //         {label: 'About place', icon: 'pi pi-fw pi-bookmark',},
                         //         {label: 'Place maps', icon: 'pi pi-fw pi-bookmark',},
@@ -50,26 +50,19 @@ export default {
 				{
 					label: 'Services', icon: 'pi pi-fw pi-sitemap',
 					items: [
-						{label: 'Cars', icon: 'pi pi-fw pi-car', to: '/formlayout',
-                        // items: [
-                        //         {label: 'Travel table', icon: 'pi pi-fw pi-bookmark',},
-                        //         {label: 'Cars photos', icon: 'pi pi-fw pi-bookmark',},
-                        //         {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
-                        //     ]
+                        {
+                            label: 'Travel places', icon: 'pi pi-building', to: '/travels',
                         },
-						{label: 'Gits', icon: 'pi pi-fw pi-user', to: '/input',
-                        // items: [
-                        //         {label: 'Travel table', icon: 'pi pi-fw pi-bookmark',},
-                        //         {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
-                        //     ]
+						{
+                            label: 'Cars', icon: 'pi pi-fw pi-car', to: '/cars',
                         },
-                        {label: "Galleria", icon: "pi pi-fw pi-image", to: "/floatlabel",
-                        // items: [
-                        //         {label: 'About place', icon: 'pi pi-fw pi-bookmark',},
-                        //         {label: 'Place maps', icon: 'pi pi-fw pi-bookmark',},
-                        //     ]
+						{
+                            label: 'Gits', icon: 'pi pi-fw pi-user', to: '/gits',
                         },
-                        {label: "About us", icon: "pi pi-fw pi-exclamation-circle", to: "/invalidstate",                        },
+                        {
+                            label: "Galleria", icon: "pi pi-fw pi-image", to: "/galleria",
+                        },
+                        {label: "About us", icon: "pi pi-fw pi-exclamation-circle", to: "/about_us",                        },
 						
 					]
 				},

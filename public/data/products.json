@@ -1,18 +1,6 @@
 {
 	"data": [
 		{
-			"id": "1000",
-			"code": "f230fh0g3",
-			"name": "Captiva",
-			"description": "Product Description",
-			"image": "Captiva_hd.jpg",
-			"price": 65,
-			"category": "Accessories",
-			"quantity": 24,
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
-		},
-		{
 			"id": "1001",
 			"code": "nvklal433",
 			"name": "Cobalt",
@@ -23,6 +11,30 @@
 			"quantity": 61,
 			"inventoryStatus": "INSTOCK",
 			"rating": 4
+		},
+		{
+			"id": "1001",
+			"code": "nvklal433",
+			"name": "Gentra",
+			"description": "Product Description",
+			"image": "Gentra.jpg",
+			"price": 72,
+			"category": "Accessories",
+			"quantity": 61,
+			"inventoryStatus": "INSTOCK",
+			"rating": 4
+		},
+		{
+			"id": "1000",
+			"code": "f230fh0g3",
+			"name": "Captiva",
+			"description": "Product Description",
+			"image": "Captiva_hd.jpg",
+			"price": 65,
+			"category": "Accessories",
+			"quantity": 24,
+			"inventoryStatus": "INSTOCK",
+			"rating": 5
 		},
 		{
 			"id": "1002",
@@ -48,18 +60,7 @@
 			"inventoryStatus": "INSTOCK",
 			"rating": 5
 		},
-		{
-			"id": "1004",
-			"code": "h456wer53",
-			"name": "Toyota Hiace",
-			"description": "Product Description",
-			"image": "Toyota Hiace hd.png",
-			"price": 15,
-			"category": "Accessories",
-			"quantity": 73,
-			"inventoryStatus": "INSTOCK",
-			"rating": 4
-		},
+		
 		{
 			"id": "1005",
 			"code": "av2231fwg",
