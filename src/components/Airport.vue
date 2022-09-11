@@ -9,7 +9,7 @@
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3 flex justify-content-center" >
-                                    <Image :src="'images/product/' + product.data.image" :alt="product.data.name" width="350" class="product-image" preview/>
+                                    <Image :src="'images/welcome/' + product.data.image" :alt="product.data.name" width="350" class="product-image" preview/>
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
@@ -102,129 +102,130 @@
 </template>
 
 <script>
-import ProductService from "../service/ProductService";
-import PhotoService from "../service/PhotoService";
-
-export default {
-    data() {
-        return {
-            display: false,
-            display2: false,
-            display3: false,
-            display4: false,
-			displayConfirmation: false,
-            products: [],
-            products2: [],
-            products3: [],
-            products4: [],
-            products5: [],
-            images: [],
-            carouselResponsiveOptions: [
-                {
-                    breakpoint: "1024px", //1500
-                    numVisible: 3,
-                    numScroll: 3,
+    import ProductService from "../service/ProductService";
+    import PhotoService from "../service/PhotoService";
+    
+    export default {
+        data() {
+            return {
+                display: false,
+                display2: false,
+                display3: false,
+                display4: false,
+                displayConfirmation: false,
+                products: [],
+                products2: [],
+                products3: [],
+                products4: [],
+                products5: [],
+                images: [],
+                carouselResponsiveOptions: [
+                    {
+                        breakpoint: "1024px", //1500
+                        numVisible: 3,
+                        numScroll: 3,
+                    },
+                    {
+                        breakpoint: "768px", //1392
+                        numVisible: 2,
+                        numScroll: 2,
+                    },
+                    {
+                        breakpoint: "560px", //824
+                        numVisible: 1,
+                        numScroll: 1,
+                    },
+                ],
+            };
+        },
+        created() {
+            this.productService = new ProductService();
+            this.photoService = new PhotoService();
+        },
+        mounted() {
+            this.productService.getWelcome().then((products) => {
+                this.products = products;
+            });
+            this.productService.getProductsSmall2().then((products2) => {
+                this.products2 = products2;
+            });
+            this.productService.getProductsSmall3().then((products3) => {
+                this.products3 = products3;
+            });
+            this.productService.getProductsSmall4().then((products4) => {
+                this.products4 = products4;
+            });
+            this.productService.getProductsSmall5().then((products5) => {
+                this.products5 = products5;
+            });
+            this.photoService.getImages().then((images) => {
+                this.images = images;
+            });
+           
+        },
+        methods: {
+                // open() {
+                //     this.display = true;
+                // },
+                close() {
+                    this.display = false;
                 },
-                {
-                    breakpoint: "768px", //1392
-                    numVisible: 2,
-                    numScroll: 2,
+                openConfirmation() {
+                    this.displayConfirmation = true;
                 },
-                {
-                    breakpoint: "560px", //824
-                    numVisible: 1,
-                    numScroll: 1,
+                closeConfirmation() {
+                    this.displayConfirmation = false;
                 },
-            ],
-        };
-    },
-    created() {
-        this.productService = new ProductService();
-        this.photoService = new PhotoService();
-    },
-    mounted() {
-        this.productService.getProductsSmall().then((products) => {
-            this.products = products;
-        });
-        this.productService.getProductsSmall2().then((products2) => {
-            this.products2 = products2;
-        });
-        this.productService.getProductsSmall3().then((products3) => {
-            this.products3 = products3;
-        });
-        this.productService.getProductsSmall4().then((products4) => {
-            this.products4 = products4;
-        });
-        this.productService.getProductsSmall5().then((products5) => {
-            this.products5 = products5;
-        });
-        this.photoService.getImages().then((images) => {
-            this.images = images;
-        });
-       
-    },
-    methods: {
-			// open() {
-            //     this.display = true;
-			// },
-			close() {
-				this.display = false;
-			},
-			openConfirmation() {
-				this.displayConfirmation = true;
-			},
-			closeConfirmation() {
-				this.displayConfirmation = false;
-			},
-			toggle(event) {
-                this.display = true;
-				this.$refs.op.toggle(event);
-			},
-			toggleDataTable(event) {
-                this.display2 = true;
-				this.$refs.op2.toggleDataTable(event);
-			},
-            toggleGalleria(event) {
-                this.display3 = true;
-				this.$refs.op3.toggle(event);
-			},
-            toggleData(event) {
-                this.display4 = true;
-				this.$refs.op4.toggle(event);
-			},
-			formatCurrency(value) {
-				return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
-			},
-			onProductSelect(event) {
-				this.$refs.op.hide();
-				this.$toast.add({severity:'info', summary: 'Product Selected', detail: event.data.name, life: 3000});
-			},
-			confirm(event) {
-				this.$confirm.require({
-					target: event.currentTarget,
-					message: 'Are you sure you want to proceed?',
-					icon: 'pi pi-exclamation-triangle',
-					accept: () => {
-						this.$toast.add({severity:'info', summary:'Confirmed', detail:'You have accepted', life: 3000});
-					},
-					reject: () => {
-						this.$toast.add({severity:'error', summary:'Rejected', detail:'You have rejected', life: 3000});
-					}
-				});
-			}
-		}
-};
-</script>
-
-<style lang="scss" scoped>
-@import '../assets/demo/badges.scss';
-@import '../assets/demo/items.scss';
-h5 {
-    margin-bottom: -0.5rem;
-    text-align: center;
-}
-*{
-    cursor: context-menu;
-}
-
-</style> 
+                toggle(event) {
+                    this.display = true;
+                    this.$refs.op.toggle(event);
+                },
+                toggleDataTable(event) {
+                    this.display2 = true;
+                    this.$refs.op2.toggleDataTable(event);
+                },
+                toggleGalleria(event) {
+                    this.display3 = true;
+                    this.$refs.op3.toggle(event);
+                },
+                toggleData(event) {
+                    this.display4 = true;
+                    this.$refs.op4.toggle(event);
+                },
+                formatCurrency(value) {
+                    return value.toLocaleString('en-US', {style: 'currency', currency: 'USD'});
+                },
+                onProductSelect(event) {
+                    this.$refs.op.hide();
+                    this.$toast.add({severity:'info', summary: 'Product Selected', detail: event.data.name, life: 3000});
+                },
+                confirm(event) {
+                    this.$confirm.require({
+                        target: event.currentTarget,
+                        message: 'Are you sure you want to proceed?',
+                        icon: 'pi pi-exclamation-triangle',
+                        accept: () => {
+                            this.$toast.add({severity:'info', summary:'Confirmed', detail:'You have accepted', life: 3000});
+                        },
+                        reject: () => {
+                            this.$toast.add({severity:'error', summary:'Rejected', detail:'You have rejected', life: 3000});
+                        }
+                    });
+                }
+            }
+    };
+    </script>
+    
+    <style lang="scss" scoped>
+    @import '../assets/demo/badges.scss';
+    @import '../assets/demo/items.scss';
+    h5 {
+        margin-bottom: -0.5rem;
+        text-align: center;
+    }
+    *{
+        cursor: context-menu;
+    }
+    
+    </style> 
+    
