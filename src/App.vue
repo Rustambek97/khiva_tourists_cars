@@ -37,7 +37,7 @@ export default {
                 {
                     label: 'Home',
                     items: [{
-                        label: 'Airport', icon: 'pi pi-fw pi-home', to: '/',
+                        label: 'Travel to Uzbekistan', icon: 'pi pi-fw pi-home', to: '/',
                         // items: [
                         //         {label: 'About place', icon: 'pi pi-fw pi-bookmark',},
                         //         {label: 'Place maps', icon: 'pi pi-fw pi-bookmark',},

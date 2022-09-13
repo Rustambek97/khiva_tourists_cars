@@ -3,13 +3,18 @@
         <div class="col-12">
             <div class="card">
                 <!-- one -->
-                <h5>A I R P O R T</h5>
+                <div class="col-12">
+                    <Dialog header="Maps" v-model:visible="display" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
+                        <img src="images/welcome/uzbekistan_map.png" style="width: 100%;"/>
+                    </Dialog>
+                    <Button type="button" label="TRAVEL TO UZBEKISTAN" @click="toggle" class="p-button-success"/>
+                </div>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3 flex justify-content-center" >
-                                    <Image :src="'images/welcome/' + product.data.image" :alt="product.data.name" width="350" class="product-image" preview/>
+                                    <img :src="'images/welcome/' + product.data.image" :alt="product.data.name" class="product-image"/>
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
@@ -24,19 +29,19 @@
                                 </div>
                                 
                                 <div>
-                                    <div class="col-12">
-                                        <Dialog header="Maps" v-model:visible="display" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
-                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" style="width: 100%;"/>
-                                        </Dialog>    
-                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/> 
-                                    </div>
+                                    
                                     <div class="col-12">
                                         <Dialog header="Cars" v-model:visible="display2" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
                                             <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
-                                                <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
+                                                <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;">
+                                                    <template #body="slotProps">
+                                                        
+                                                        {{formatCurrency(slotProps.data.name)}}
+                                                    </template>
+                                                </Column>
                                                 <Column header="Image" headerStyle="min-width:10rem;">
                                                     <template #body="slotProps">
-                                                        <img :src="'images/product/' + slotProps.data.image" :alt="slotProps.data.image" width="100" class="shadow-2" />
+                                                        <img :src="'images/welcome/' + slotProps.data.image" :alt="slotProps.data.image" width="100" class="shadow-2" />
                                                     </template>
                                                 </Column>
                                                 <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
@@ -108,30 +113,35 @@
     export default {
         data() {
             return {
+                count: 1,
                 display: false,
                 display2: false,
                 display3: false,
                 display4: false,
                 displayConfirmation: false,
                 products: [],
+                products1: [],
                 products2: [],
                 products3: [],
                 products4: [],
                 products5: [],
+                products6: [],
+                products7: [],
+                products8: [],
                 images: [],
                 carouselResponsiveOptions: [
                     {
-                        breakpoint: "1024px", //1500
+                        breakpoint: "1024px", //1500 1024
                         numVisible: 3,
                         numScroll: 3,
                     },
                     {
-                        breakpoint: "768px", //1392
+                        breakpoint: "768px", //1392 768
                         numVisible: 2,
                         numScroll: 2,
                     },
                     {
-                        breakpoint: "560px", //824
+                        breakpoint: "560px", //824 560
                         numVisible: 1,
                         numScroll: 1,
                     },
@@ -146,17 +156,29 @@
             this.productService.getWelcome().then((products) => {
                 this.products = products;
             });
-            this.productService.getProductsSmall2().then((products2) => {
+            this.productService.getCarsPrice1().then((products1) => {
+                this.products1 = products1;
+            });
+            this.productService.getCarsPrice2().then((products2) => {
                 this.products2 = products2;
             });
-            this.productService.getProductsSmall3().then((products3) => {
+            this.productService.getCarsPrice3().then((products3) => {
                 this.products3 = products3;
             });
-            this.productService.getProductsSmall4().then((products4) => {
+            this.productService.getCarsPrice4().then((products4) => {
                 this.products4 = products4;
             });
-            this.productService.getProductsSmall5().then((products5) => {
+            this.productService.getCarsPrice5().then((products5) => {
                 this.products5 = products5;
+            });
+            this.productService.getCarsPrice6().then((products6) => {
+                this.products6 = products6;
+            });
+            this.productService.getCarsPrice7().then((products7) => {
+                this.products7 = products7;
+            });
+            this.productService.getCarsPrice8().then((products8) => {
+                this.products8 = products8;
             });
             this.photoService.getImages().then((images) => {
                 this.images = images;
@@ -198,6 +220,12 @@
                 onProductSelect(event) {
                     this.$refs.op.hide();
                     this.$toast.add({severity:'info', summary: 'Product Selected', detail: event.data.name, life: 3000});
+                },
+                stage(){
+                    // if(this.count === 1){
+                    //     this.products1 = products1;
+                    // }
+                    this.count = this.count + 1;
                 },
                 confirm(event) {
                     this.$confirm.require({

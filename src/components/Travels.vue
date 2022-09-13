@@ -9,7 +9,7 @@
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3 flex justify-content-center" >
-                                    <Image :src="'images/product/' + product.data.image" :alt="product.data.name" width="350" class="product-image" preview/>
+                                    <Image :src="'images/product/' + product.data.image" :alt="product.data.name" width="250" preview/>
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
