@@ -35,7 +35,6 @@
                                             <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
                                                 <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;">
                                                     <template #body="slotProps">
-                                                        
                                                         {{formatCurrency(slotProps.data.name)}}
                                                     </template>
                                                 </Column>
@@ -120,14 +119,6 @@
                 display4: false,
                 displayConfirmation: false,
                 products: [],
-                products1: [],
-                products2: [],
-                products3: [],
-                products4: [],
-                products5: [],
-                products6: [],
-                products7: [],
-                products8: [],
                 images: [],
                 carouselResponsiveOptions: [
                     {
@@ -155,30 +146,6 @@
         mounted() {
             this.productService.getWelcome().then((products) => {
                 this.products = products;
-            });
-            this.productService.getCarsPrice1().then((products1) => {
-                this.products1 = products1;
-            });
-            this.productService.getCarsPrice2().then((products2) => {
-                this.products2 = products2;
-            });
-            this.productService.getCarsPrice3().then((products3) => {
-                this.products3 = products3;
-            });
-            this.productService.getCarsPrice4().then((products4) => {
-                this.products4 = products4;
-            });
-            this.productService.getCarsPrice5().then((products5) => {
-                this.products5 = products5;
-            });
-            this.productService.getCarsPrice6().then((products6) => {
-                this.products6 = products6;
-            });
-            this.productService.getCarsPrice7().then((products7) => {
-                this.products7 = products7;
-            });
-            this.productService.getCarsPrice8().then((products8) => {
-                this.products8 = products8;
             });
             this.photoService.getImages().then((images) => {
                 this.images = images;
@@ -220,12 +187,6 @@
                 onProductSelect(event) {
                     this.$refs.op.hide();
                     this.$toast.add({severity:'info', summary: 'Product Selected', detail: event.data.name, life: 3000});
-                },
-                stage(){
-                    // if(this.count === 1){
-                    //     this.products1 = products1;
-                    // }
-                    this.count = this.count + 1;
                 },
                 confirm(event) {
                     this.$confirm.require({
