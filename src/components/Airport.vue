@@ -20,9 +20,9 @@
                                     <h4 class="mb-1">
                                         {{ product.data.name }}
                                     </h4>
-                                    <h6 class="mt-0 mb-2">
+                                    <h5 class="mt-0 mb-2">
                                         ${{ product.data.price }}
-                                    </h6>
+                                    </h5>
                                     <h6 class="mt-0 mb-1">
                                         {{ product.data.description }}
                                     </h6>
@@ -34,18 +34,18 @@
                                         <Dialog header="Cars" v-model:visible="display2" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
                                             <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
                                                 <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;">
-                                                    <template #body="slotProps">
-                                                        {{formatCurrency(slotProps.data.name)}}
+                                                    <template #body="product">
+                                                        {{formatCurrency(product.data.name)}}
                                                     </template>
                                                 </Column>
                                                 <Column header="Image" headerStyle="min-width:10rem;">
-                                                    <template #body="slotProps">
-                                                        <img :src="'images/welcome/' + slotProps.data.image" :alt="slotProps.data.image" width="100" class="shadow-2" />
+                                                    <template #body="product">
+                                                        <img :src="'images/welcome/' + product.data.image" :alt="product.data.image" width="100" class="shadow-2" />
                                                     </template>
                                                 </Column>
                                                 <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
-                                                    <template #body="slotProps">
-                                                        {{formatCurrency(slotProps.data.price)}}
+                                                    <template #body="product">
+                                                        {{formatCurrency(product.data.price)}}
                                                     </template>
                                                 </Column>
                                             </DataTable>

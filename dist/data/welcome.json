@@ -2,75 +2,59 @@
 	"data": [
 		{
 			"id": "1000",
-			"code": "f230fh0g3",
-			"name": "Daytrip to Three Castles",
-			"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva",
+			"name": "Urganch airport",
+			"description": "Khiva <-> Urganch airport",
 			"image": "Urganch airport.jpg",
-			"price": "From $34 to $229 for one car",
-			"category": "Accessories",
-			"quantity": "01.jpg",
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"price": "12 for one car"
 		},
 		{
 			"id": "1001",
-			"code": "nvklal433",
-			"name": "Daytrip to Five Castles",
-			"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva",
-			"image": "Urganch vokzal.jpg",
-			"price": "From $39 to $249 for one car",
-			"category": "Accessories",
-			"quantity": "02.jpg",
-			"inventoryStatus": "INSTOCK",
-			"rating": 4
+			"name": "Urganch railway station",
+			"description": "Khiva <-> Urganch railway station",
+			"image": "Urgench-city.jpg",
+			"price": "12 for one car"
 		},
 		{
 			"id": "1002",
-			"code": "zz21cz3c1",
-			"name": "Daytrip to Seven Castles",
-			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva",
+			"name": "Khiva railway station",
+			"description": "Khiva <-> Khiva railway station",
 			"image": "Khiva vokzal.jpg",
-			"price": "From $44 to $299 for one car",
-			"category": "Fitness",
-			"quantity": "03.jpg",
-			"inventoryStatus": "LOWSTOCK",
-			"rating": 3
+			"price": "5 for one car"
 		},
 		{
 			"id": "1003",
-			"code": "244wgerg2",
-			"name": "Daytrip to Ten Castles",
-			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva",
+			"name": "Nukus",
+			"description": "Khiva <-> Nukus",
+			"image": "Nukus.jpg",
+			"price": "39 for one car"
+		},
+		{
+			"id": "1004",
+			"name": "Bukhara",
+			"description": "Khiva <-> Bukhara",
 			"image": "Buxora.jpg",
-			"price": "From $49 to $319 for one car",
-			"category": "Clothing",
-			"quantity": "04.jpg",
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"price": "69 for one car"
 		},
         {
-			"id": "1003",
-			"code": "244wgerg2",
-			"name": "Daytrip to Ten Castles",
-			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva",
+			"id": "1005",
+			"name": "Samarkand",
+			"description": "Bukhara <-> Samarkand",
 			"image": "Samarkand.jpg",
-			"price": "From $49 to $319 for one car",
-			"category": "Clothing",
-			"quantity": "04.jpg",
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"price": "89 for one car"
+		},
+		{
+			"id": "1006",
+			"name": "Shakhrisabz",
+			"description": "Bukhara <-> Shakhrisabz <-> Samarkand",
+			"image": "Shakhrisabz.jpg",
+			"price": "109 for one car"
 		},
         {
-			"id": "1003",
-			"code": "244wgerg2",
-			"name": "Daytrip to Ten Castles",
-			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva",
+			"id": "1007",
+			"name": "Tashkent",
+			"description": "Samarkand <-> Tashkent",
 			"image": "Toshkent.jpg",
-			"price": "From $49 to $319 for one car",
-			"category": "Clothing",
-			"quantity": "04.jpg",
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"price": "129 for one car"
 		}
 	]
 }

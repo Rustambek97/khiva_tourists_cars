@@ -57,7 +57,7 @@ export default {
                             label: 'Cars', icon: 'pi pi-fw pi-car', to: '/cars',
                         },
 						{
-                            label: 'Gits', icon: 'pi pi-fw pi-user', to: '/gits',
+                            label: 'Guide', icon: 'pi pi-fw pi-user', to: '/gits',
                         },
                         {
                             label: "Galleria", icon: "pi pi-fw pi-image", to: "/galleria",

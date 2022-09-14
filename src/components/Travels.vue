@@ -3,49 +3,54 @@
         <div class="col-12">
             <div class="card">
                 <!-- one -->
-                <h5>Daytrips to The Ancient Khorezm Fortresses</h5>
+                <Dialog header="Maps" v-model:visible="display" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
+                        <img src="images/maps/01.jpg" style="width: 100%;"/>
+                </Dialog>
+                <Button type="button" label="Private Round Day-Trips from Khiva to The Ancient Fortresses" @click="toggle" class="p-button-success"/>
+                
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
-                                <div class="mb-3 flex justify-content-center" >
-                                    <Image :src="'images/product/' + product.data.image" :alt="product.data.name" width="250" preview/>
+                                <div class="mb-3" >
+                                    <img :src="'images/product/' + product.data.image" :alt="product.data.name" class="product-image" />
                                 </div>
+        <!--                    show photo      <div class="mb-3 flex justify-content-center" >
+                                                    <Image :src="'images/product/' + product.data.image" :alt="product.data.name" width="250" preview/>
+                                                </div> -->
                                 <div>
                                     <h4 class="mb-1">
                                         {{ product.data.name }}
                                     </h4>
-                                    <h6 class="mt-0 mb-2">
+                                    <h5 class="mt-0 mb-2">
                                         ${{ product.data.price }}
-                                    </h6>
+                                    </h5>
                                     <h6 class="mt-0 mb-1">
                                         {{ product.data.description }}
                                     </h6>
                                 </div>
                                 
                                 <div>
-                                    <div class="col-12">
-                                        <Dialog header="Maps" v-model:visible="display" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
-                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" style="width: 100%;"/>
-                                        </Dialog>    
-                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/> 
-                                    </div>
+                                    
                                     <div class="col-12">
                                         <Dialog header="Cars" v-model:visible="display2" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
                                             <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
-                                                <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
+                                                <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;">
+                                                    <template #item="product">
+                                                        {{formatCurrency(product.data.name)}}
+                                                    </template>
+                                                </Column>
                                                 <Column header="Image" headerStyle="min-width:10rem;">
-                                                    <template #body="slotProps">
-                                                        <img :src="'images/product/' + slotProps.data.image" :alt="slotProps.data.image" width="100" class="shadow-2" />
+                                                    <template #item="product">
+                                                        <img :src="'images/product/' + product.data.image" :alt="product.data.image" width="100" class="shadow-2" />
                                                     </template>
                                                 </Column>
                                                 <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
-                                                    <template #body="slotProps">
-                                                        {{formatCurrency(slotProps.data.price)}}
+                                                    <template #item="product">
+                                                        {{formatCurrency(product.data.price)}}
                                                     </template>
                                                 </Column>
                                             </DataTable>
-
                                         </Dialog>    
                                         <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>       
                                     </div>
@@ -97,7 +102,11 @@
                     
                 </Carousel>
                 <!-- two -->
-                <h5>Daytrips to the Muynak Ship Cemetery and Nukus Art Galery</h5>
+                <Dialog header="Maps" v-model:visible="display" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
+                        <img src="images/maps/01.jpg" style="width: 100%;"/>
+                </Dialog>
+                <Button type="button" label="Private Round Day-Trips from Khiva to Nukus and Muynak" @click="toggle" class="p-button-success"/>
+                
                 <Carousel :value="products2" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
@@ -109,21 +118,16 @@
                                     <h4 class="mb-1">
                                         {{ product.data.name }}
                                     </h4>
-                                    <h6 class="mt-0 mb-2">
+                                    <h5 class="mt-0 mb-2">
                                         ${{ product.data.price }}
-                                    </h6>
+                                    </h5>
                                     <h6 class="mt-0 mb-1">
                                         {{ product.data.description }}
                                     </h6>
                                 </div>
                                 
                                 <div>
-                                    <div class="col-12">
-                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
-                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
-                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
-                                        </OverlayPanel>
-                                    </div>
+                                    
                                     <div class="col-12">
                                         <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
                                         <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
@@ -189,7 +193,11 @@
                 </Carousel>
 
                 <!-- three -->
-                <h5>Daytrips between Khiva and Nukus or/and Nukus and Khiva</h5>
+                <Dialog header="Maps" v-model:visible="display" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
+                        <img src="images/maps/01.jpg" style="width: 100%;"/>
+                </Dialog>
+                <Button type="button" label="Private One-Way Day-Trips between Khiva and Nukus or reverse" @click="toggle" class="p-button-success"/>
+                
                 <Carousel :value="products3" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
@@ -201,21 +209,16 @@
                                     <h4 class="mb-1">
                                         {{ product.data.name }}
                                     </h4>
-                                    <h6 class="mt-0 mb-2">
+                                    <h5 class="mt-0 mb-2">
                                         ${{ product.data.price }}
-                                    </h6>
+                                    </h5>
                                     <h6 class="mt-0 mb-1">
                                         {{ product.data.description }}
                                     </h6>
                                 </div>
                                 
                                 <div>
-                                    <div class="col-12">
-                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
-                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
-                                            <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
-                                        </OverlayPanel>
-                                    </div>
+                                    
                                     <div class="col-12">
                                         <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
                                         <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
@@ -281,7 +284,11 @@
                 </Carousel>
 
                 <!-- four -->
-                <h5>Daytrips between Khiva and Bukhara or/and Bukhara and Khiva</h5>
+                <Dialog header="Maps" v-model:visible="display" :breakpoints="{'960px': '100vw'}" :style="{width: '50vw'}" :modal="true">
+                        <img src="images/maps/01.jpg" style="width: 100%;"/>
+                </Dialog>
+                <Button type="button" label="Private One-Way Day-Trips between Khiva and Bukhara" @click="toggle" class="p-button-success"/>
+                
                 <Carousel :value="products4" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
@@ -293,21 +300,21 @@
                                     <h4 class="mb-1">
                                         {{ product.data.name }}
                                     </h4>
-                                    <h6 class="mt-0 mb-2">
+                                    <h5 class="mt-0 mb-2">
                                         ${{ product.data.price }}
-                                    </h6>
+                                    </h5>
                                     <h6 class="mt-0 mb-1">
                                         {{ product.data.description }}
                                     </h6>
                                 </div>
                                 
                                 <div>
-                                    <div class="col-12">
+                                    <!-- <div class="col-12">
                                         <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
                                         <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
                                             <img :src="'images/maps/' + product.data.quantity" :alt="product.data.name" />
                                         </OverlayPanel>
-                                    </div>
+                                    </div> -->
                                     <div class="col-12">
                                         <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
                                         <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">

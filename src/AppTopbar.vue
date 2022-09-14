@@ -1,8 +1,8 @@
 <template>
 	<div class="layout-topbar">
 		<router-link to="/" class="layout-topbar-logo">
-			<img alt="Logo" :src="topbarImage()" />
-			<span style="text-align: center;">Transport cars for tourists in Khiva</span>
+			<img alt="Logo" :src="topbarImage()" style="height: 5rem;" />
+			<span style="text-align: left;">Transport cars for tourists in Khiva</span>
 		</router-link>
 
 		<button class="p-link layout-menu-button layout-topbar-button" @click="onMenuToggle">

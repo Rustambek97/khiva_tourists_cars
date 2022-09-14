@@ -2,51 +2,31 @@
 	"data": [
 		{
 			"id": "1000",
-			"code": "f230fh0g3",
-			"name": "Daytrip to Three Castles",
+			"name": "Day-trip to Three Castles",
 			"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva",
 			"image": "01.Крепость Кызыл-Кала.jpg",
-			"price": "From $34 to $229 for one car",
-			"category": "Accessories",
-			"quantity": "01.jpg",
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"price": "34 for one car"
 		},
 		{
 			"id": "1001",
-			"code": "nvklal433",
-			"name": "Daytrip to Five Castles",
+			"name": "Day-trip to Five Castles",
 			"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva",
 			"image": "02.Guldersan-Qala-Khorezm-Castles-Uzbekistan-3.jpg",
-			"price": "From $39 to $249 for one car",
-			"category": "Accessories",
-			"quantity": "02.jpg",
-			"inventoryStatus": "INSTOCK",
-			"rating": 4
+			"price": "39 for one car"
 		},
 		{
 			"id": "1002",
-			"code": "zz21cz3c1",
-			"name": "Daytrip to Seven Castles",
+			"name": "Day-trip to Seven Castles",
 			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva",
 			"image": "03.Janbas.jpg",
-			"price": "From $44 to $299 for one car",
-			"category": "Fitness",
-			"quantity": "03.jpg",
-			"inventoryStatus": "LOWSTOCK",
-			"rating": 3
+			"price": "44 for one car"
 		},
 		{
 			"id": "1003",
-			"code": "244wgerg2",
-			"name": "Daytrip to Ten Castles",
+			"name": "Day-trip to Ten Castles",
 			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva",
 			"image": "04.krepost.jpg",
-			"price": "From $49 to $319 for one car",
-			"category": "Clothing",
-			"quantity": "04.jpg",
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"price": "49 for one car"
 		}
 	]
 }

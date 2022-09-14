@@ -2,7 +2,7 @@
     <div class="grid p-fluid">
         <div class="col-12">
             <div class="card">
-                <h5>Cars for Travels</h5>
+                <h2 style="text-align:center">Cars for Trip</h2>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
@@ -14,9 +14,9 @@
                                     <h4 class="mb-1">
                                         {{ product.data.name }}
                                     </h4>
-                                    <h6 class="mt-0 mb-3">
+                                    <h5 class="mt-0 mb-3">
                                         ${{ product.data.price }}
-                                    </h6>
+                                    </h5>
                                 </div>
                                 
                                 <div>
@@ -122,7 +122,7 @@ export default {
         this.photoService = new PhotoService();
     },
     mounted() {
-        this.productService.getProducts().then((products) => {
+        this.productService.getCars().then((products) => {
             this.products = products;
         });
         this.photoService.getImages().then((images) => {

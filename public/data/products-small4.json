@@ -2,51 +2,31 @@
 	"data": [
 		{
 			"id": "1000",
-			"code": "f230fh0g3",
 			"name": "Khiva - Two Castles - Bukhara",
-			"description": "Travel Description",
+			"description": "Khiva-> Dumon Kala -> Guldursun Kala -> Bukhara",
 			"image": "41. Guldursun-kala.jpg",
-			"price": "From $34 to $229 for one car",
-			"category": "Accessories",
-			"quantity": 24,
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"price": "69 for one car"
 		},
 		{
 			"id": "1001",
-			"code": "nvklal433",
 			"name": "Khiva - Five Castles - Bukhara",
-			"description": "Product Description",
+			"description": "Khiva-> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Dumon Kala -> Guldursun Kala -> Bukhara",
 			"image": "42. Bukhara.jpg",
-			"price": 72,
-			"category": "Accessories",
-			"quantity": 61,
-			"inventoryStatus": "INSTOCK",
-			"rating": 4
+			"price": "79 for one car"
 		},
 		{
 			"id": "1002",
-			"code": "zz21cz3c1",
 			"name": "Bukhara - Two Castles - Khiva",
-			"description": "Product Description",
+			"description": "Bukhara -> Guldursun Kala -> Dumon Kala -> Khiva",
 			"image": "43. Bukhara.jpg",
-			"price": 79,
-			"category": "Fitness",
-			"quantity": 2,
-			"inventoryStatus": "LOWSTOCK",
-			"rating": 3
+			"price": "69 for one car"
 		},
 		{
 			"id": "1003",
-			"code": "244wgerg2",
 			"name": "Bukhara - Five Castles - Khiva",
-			"description": "Product Description",
+			"description": "Bukhara -> Guldursun Kala -> Dumon Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva",
 			"image": "44.Khiva.jpg",
-			"price": 29,
-			"category": "Clothing",
-			"quantity": 25,
-			"inventoryStatus": "INSTOCK",
-			"rating": 5
+			"price": "79 for one car"
 		}
 	]
 }

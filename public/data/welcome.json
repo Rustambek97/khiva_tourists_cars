@@ -5,56 +5,56 @@
 			"name": "Urganch airport",
 			"description": "Khiva <-> Urganch airport",
 			"image": "Urganch airport.jpg",
-			"price": "From $12 to $89 for one car"
+			"price": "12 for one car"
 		},
 		{
 			"id": "1001",
 			"name": "Urganch railway station",
 			"description": "Khiva <-> Urganch railway station",
 			"image": "Urgench-city.jpg",
-			"price": "From $12 to $89 for one car"
+			"price": "12 for one car"
 		},
 		{
 			"id": "1002",
 			"name": "Khiva railway station",
 			"description": "Khiva <-> Khiva railway station",
 			"image": "Khiva vokzal.jpg",
-			"price": "From $5 to $39 for one car"
+			"price": "5 for one car"
 		},
 		{
 			"id": "1003",
 			"name": "Nukus",
 			"description": "Khiva <-> Nukus",
 			"image": "Nukus.jpg",
-			"price": "From $39 to $329 for one car"
+			"price": "39 for one car"
 		},
 		{
 			"id": "1004",
 			"name": "Bukhara",
 			"description": "Khiva <-> Bukhara",
 			"image": "Buxora.jpg",
-			"price": "From $69 to $539 for one car"
+			"price": "69 for one car"
 		},
         {
 			"id": "1005",
 			"name": "Samarkand",
 			"description": "Bukhara <-> Samarkand",
 			"image": "Samarkand.jpg",
-			"price": "From $89 to $519 for one car"
+			"price": "89 for one car"
 		},
 		{
 			"id": "1006",
 			"name": "Shakhrisabz",
 			"description": "Bukhara <-> Shakhrisabz <-> Samarkand",
 			"image": "Shakhrisabz.jpg",
-			"price": "From $109 to $619 for one car"
+			"price": "109 for one car"
 		},
         {
 			"id": "1007",
 			"name": "Tashkent",
 			"description": "Samarkand <-> Tashkent",
 			"image": "Toshkent.jpg",
-			"price": "From $129 to $819 for one car"
+			"price": "129 for one car"
 		}
 	]
 }

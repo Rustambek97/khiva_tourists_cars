@@ -1,6 +1,6 @@
 <template>
 	<div class="layout-footer">
-		<img alt="Logo" :src="footerImage()" height="20" class="mr-2" />
+		<img alt="Logo" :src="footerImage()" height="80" />
 		
 		<span class="font-medium ml-2">Cars for Khiva tourists</span>
 	</div>

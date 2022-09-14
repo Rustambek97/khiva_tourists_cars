@@ -1,0 +1,47 @@
+{
+	"data": [
+		{
+			"id": "1000",
+			"name": "Cobalt",
+			"description": "Product Description",
+			"image": "Cobalt_hd.jpeg",
+			"price": "5 in Khiva"
+		},
+		{
+			"id": "1001",
+			"name": "Gentra",
+			"description": "Product Description",
+			"image": "Gentra.jpg",
+			"price": "5 in Khiva"
+		},
+		{
+			"id": "1002",
+			"name": "Captiva",
+			"description": "Product Description",
+			"image": "Captiva_hd.jpg",
+			"price": "15 in Khiva"
+		},
+		{
+			"id": "1003",
+			"name": "Mnivan",
+			"description": "Product Description",
+			"image": "hyundai-h1_hd.png",
+			"price": "15 in Khiva"
+		},
+		{
+			"id": "1004",
+			"name": "Minibus",
+			"description": "Product Description",
+			"image": "Minibus.jpeg",
+			"price": "18 in Khiva"
+		},
+		
+		{
+			"id": "1005",
+			"name": "Bus",
+			"description": "Product Description",
+			"image": "Yutong hd.jpg",
+			"price": "39 in Khiva"
+		}
+	]
+}

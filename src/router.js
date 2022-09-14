@@ -25,7 +25,7 @@ const routes = [
             {
                 path: '/gits',
                 name: 'gits',
-                component: () => import('./components/Gits.vue')
+                component: () => import('./components/Guide.vue')
             },
             {
                 path: '/galleria',

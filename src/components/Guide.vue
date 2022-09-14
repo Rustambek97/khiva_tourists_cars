@@ -2,32 +2,30 @@
     <div class="grid p-fluid">
         <div class="col-12">
             <div class="card">
-                <h5>Gits for Travel</h5>
+                <h2 style="text-align:center">Guide for Travel</h2>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false" :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
                                 <div class="mb-3">
-                                    <img :src="'images/gits/' + product.data.image" :alt="product.data.name" class="product-image" />
+                                    <img :src="'images/gits/' + product.data.image" :alt="product.data.name" style="width: 50%;" class="product-image" />
                                 </div>
                                 <div>
                                     <h4 class="mb-1">
                                         {{ product.data.name }}
                                     </h4>
-                                    <h6 class="mt-0 mb-3">
+                                    <h5 class="mt-0 mb-2">
                                         ${{ product.data.price }}
-                                    </h6>
+                                    </h5>
+                                    <h5 class="mt-0 mb-1">
+                                        {{ product.data.description }}
+                                    </h5>
                                 </div>
                                 
                                 <div>
+                                   
                                     <div class="col-12">
-                                        <Button type="button" label="Maps" @click="toggle" class="p-button-success"/>
-                                        <OverlayPanel ref="op" appendTo="body" :showCloseIcon="true" style="width: 25rem">
-                                            <img src="images/nature/nature9.jpg" alt="Nature 9" />
-                                        </OverlayPanel>
-                                    </div>
-                                    <div class="col-12">
-                                        <Button type="button" label="Price for Cars" @click="toggleDataTable" class="p-button-success"/>
+                                        <Button type="button" label="Price for experience and excursion" @click="toggleDataTable" class="p-button-success"/>
                                         <OverlayPanel ref="op2" appendTo="body" :showCloseIcon="true" id="overlay_panel" style="width: 25rem">
                                             <DataTable :value="products" v-model:selection="selectedProduct" selectionMode="single" :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
                                                 <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;"></Column>
@@ -128,7 +126,7 @@ export default {
         this.photoService = new PhotoService();
     },
     mounted() {
-        this.productService.getGits().then((products) => {
+        this.productService.getGuide().then((products) => {
             this.products = products;
         });
         this.photoService.getImages().then((images) => {

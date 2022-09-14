@@ -16,11 +16,11 @@ export default class ProductService {
 		return fetch('data/products-small5.json').then(res => res.json()).then(d => d.data);
 	}
 
-	getProducts() {
-		return fetch('data/products.json').then(res => res.json()).then(d => d.data);
+	getCars() {
+		return fetch('data/cars.json').then(res => res.json()).then(d => d.data);
     }
-	getGits() {
-		return fetch('data/gits.json').then(res => res.json()).then(d => d.data);
+	getGuide() {
+		return fetch('data/guide.json').then(res => res.json()).then(d => d.data);
     }
 	getWelcome() {
 		return fetch('data/welcome.json').then(res => res.json()).then(d => d.data);
