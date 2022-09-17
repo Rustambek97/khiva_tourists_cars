@@ -1,60 +1,501 @@
 {
 	"data": [
 		{
-			"id": "1000",
+			"id": 1,
 			"name": "Urganch airport",
 			"description": "Khiva <-> Urganch airport",
 			"image": "Urganch airport.jpg",
-			"price": "12 for one car"
+			"price": "12 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "12"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "12"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "25"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "35"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "39"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "89"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "1 hours",
+			"description2": "1 hours",
+			"description3": "38km"
+			
 		},
 		{
-			"id": "1001",
+			"id": 2,
 			"name": "Urganch railway station",
 			"description": "Khiva <-> Urganch railway station",
 			"image": "Urgench-city.jpg",
-			"price": "12 for one car"
+			"price": "12 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "12"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "12"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "30"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "35"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "39"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "89"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "1 hours",
+			"description2": "1 hours",
+			"description3": "35 km"
 		},
 		{
-			"id": "1002",
+			"id": 3,
 			"name": "Khiva railway station",
 			"description": "Khiva <-> Khiva railway station",
 			"image": "Khiva vokzal.jpg",
-			"price": "5 for one car"
+			"price": "5 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "5"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "5"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "15"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "15"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "18"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "39"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Khiva01.jpg",
+					"thumbnailImageSrc": "images/places/Khiva1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Khiva02.jpg",
+					"thumbnailImageSrc": "images/places/Khiva2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Khiva03.jpg",
+					"thumbnailImageSrc": "images/places/Khiva3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "30 minutes",
+			"description2": "20 minutes",
+			"description3": "5-10 km"
 		},
 		{
-			"id": "1003",
+			"id": 4,
 			"name": "Nukus",
 			"description": "Khiva <-> Nukus",
 			"image": "Nukus.jpg",
-			"price": "39 for one car"
+			"price": "39 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "39"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "39"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "89"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "119"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "159"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "329"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Nukus01.jpg",
+					"thumbnailImageSrc": "images/places/Nukus1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Nukus02.jpg",
+					"thumbnailImageSrc": "images/places/Nukus2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Nukus03.jpg",
+					"thumbnailImageSrc": "images/places/Nukus01.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "2-3 hours",
+			"description2": "2-3 hours",
+			"description3": "210 km"
 		},
 		{
-			"id": "1004",
+			"id": 5,
 			"name": "Bukhara",
 			"description": "Khiva <-> Bukhara",
 			"image": "Buxora.jpg",
-			"price": "69 for one car"
+			"price": "109 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "109"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "109"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "139"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "159"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "229"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "539"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Buhoro01.jpg",
+					"thumbnailImageSrc": "images/places/Buhoro1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Buhoro02.jpg",
+					"thumbnailImageSrc": "images/places/Buhoro2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Buhoro03.jpg",
+					"thumbnailImageSrc": "images/places/Buhoro3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "6-7 hours",
+			"description2": "5-6 hours",
+			"description3": "520 km"
 		},
-        {
-			"id": "1005",
+		{
+			"id": 6,
 			"name": "Samarkand",
 			"description": "Bukhara <-> Samarkand",
 			"image": "Samarkand.jpg",
-			"price": "89 for one car"
+			"price": "109 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "109"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "109"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "139"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "159"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "229"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "519"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Samarqand01.jpg",
+					"thumbnailImageSrc": "images/places/Samarqand1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Samarqand02.jpg",
+					"thumbnailImageSrc": "images/places/Samarqand2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Samarqand03.jpg",
+					"thumbnailImageSrc": "images/places/Samarqand3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "4-5 hours",
+			"description2": "3-4 hours",
+			"description3": "320 km"
 		},
 		{
-			"id": "1006",
+			"id": 7,
 			"name": "Shakhrisabz",
 			"description": "Bukhara <-> Shakhrisabz <-> Samarkand",
 			"image": "Shakhrisabz.jpg",
-			"price": "109 for one car"
+			"price": "129 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "129"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "129"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "159"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "189"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "269"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "619"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/shahrisabs01.jpg",
+					"thumbnailImageSrc": "images/places/shahrisabs1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/shahrisabs02.jpg",
+					"thumbnailImageSrc": "images/places/shahrisabs2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/shahrisabs03.jpg",
+					"thumbnailImageSrc": "images/places/shahrisabs3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "6-8 hours",
+			"description2": "4-5 hours",
+			"description3": "390 km"
 		},
-        {
-			"id": "1007",
+		{
+			"id": 8,
 			"name": "Tashkent",
 			"description": "Samarkand <-> Tashkent",
 			"image": "Toshkent.jpg",
-			"price": "129 for one car"
+			"price": "119 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "119"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "119"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "149"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "169"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "249"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "539"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Toshkent01.jpg",
+					"thumbnailImageSrc": "images/places/Toshkent1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Toshkent02.jpg",
+					"thumbnailImageSrc": "images/places/Toshkent2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Toshkent03.jpg",
+					"thumbnailImageSrc": "images/places/Toshkent3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "8-9 hours",
+			"description2": "6-7 hours",
+			"description3": "600 km"
 		}
 	]
 }

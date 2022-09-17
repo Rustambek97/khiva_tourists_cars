@@ -3,9 +3,9 @@
 	top: 0;
 	padding: 0;
 	right: 0;
-	width: 12rem; //o'ngdagi nastroykani eni
+	width: 22rem; //o'ngdagi nastroykani eni
 	z-index: 999;
-	height: 38vh;
+	height: 70vh;
 	transform: translateX(100%);
 	transition: transform $transitionDuration;
 	backface-visibility: hidden;
@@ -63,15 +63,17 @@
 	.config-scale {
         display: flex;
         align-items: center;
-        margin: 1rem 0 2rem 0;
-
+        margin: 0rem 0 0rem 0;
+		padding: 1rem;
+		font-family: sans-serif;
+		border-bottom: solid 0.1rem #6366F1;
         .p-button {
             margin-right: .5rem;
         }
 
         i {
             margin-right: .5rem;
-            font-size: .75rem;
+            font-size: 1.5rem;
             color: var(--text-color-secondary);
 
             &.scale-active {
@@ -79,6 +81,17 @@
                 color: var(--primary-color);
             }
         }
+		a {
+			color: black;
+			font-size: 1rem;
+		}
+	}
+	.config-scale:hover{
+		background-color: #6366F1;
+		transition: 0.5s;
+		i, a {
+			color: white;
+		}
 	}
 
 	.free-themes {

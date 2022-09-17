@@ -5,4 +5,19 @@
     justify-content: center;
     padding-top: 1rem;
     border-top: 1px solid var(--surface-border);
+    i {
+        font-size: 2rem;
+       
+    }
+    a {
+        padding: 1rem;
+        color: #777;
+    }
+    a:hover {
+        color: #222;
+        i {
+            
+            transition: 0.4s;
+        }
+    }
 }
