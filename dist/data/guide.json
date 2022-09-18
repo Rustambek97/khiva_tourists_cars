@@ -1,18 +1,130 @@
 {
 	"data": [
 		{
-			"id": "1000",
+			"id": 1,
 			"name": "Man guide",
 			"description": "Tour to 5 castles $45",
 			"image": "man.jpg",
-			"price": "45 for 3 years of experience"
+			"price": "45 for 3 years of experience",
+			"guide": [
+				{
+					"excursion": "3-5 castle",
+					"experience": "3 years",
+					"price": "45"
+				},
+				{
+					"excursion": "3-5 castle",
+					"experience": "5 years",
+					"price": "50"
+				},
+				{
+					"excursion": "3-5 castle",
+					"experience": "10 years",
+					"price": "55"
+				},
+				{
+					"excursion": "7 castle",
+					"experience": "3 years",
+					"price": "49"
+				},
+				{
+					"excursion": "7 castle",
+					"experience": "5 years",
+					"price": "55"
+				},
+				{
+					"excursion": "7 castle",
+					"experience": "10 years",
+					"price": "59"
+				}
+				
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Nukus01.jpg",
+					"thumbnailImageSrc": "images/places/Nukus1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Nukus02.jpg",
+					"thumbnailImageSrc": "images/places/Nukus2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Nukus03.jpg",
+					"thumbnailImageSrc": "images/places/Nukus01.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "2 hours",
+			"description2": "2 hours",
+			"description3": "120 km"
 		},
 		{
-			"id": "1001",
+			"id": 2,
 			"name": "Women guide",
 			"description": "Tour to 5 castles $45",
 			"image": "woman.jpg",
-			"price": "45 for 3 years of experience"
+			"price": "45 for 3 years of experience",
+			"guide": [
+				{
+					"excursion": "3-5 castle",
+					"experience": "3 years",
+					"price": "45"
+				},
+				{
+					"excursion": "3-5 castle",
+					"experience": "5 years",
+					"price": "50"
+				},
+				{
+					"excursion": "3-5 castle",
+					"experience": "10 years",
+					"price": "55"
+				},
+				{
+					"excursion": "7 castle",
+					"experience": "3 years",
+					"price": "49"
+				},
+				{
+					"excursion": "7 castle",
+					"experience": "5 years",
+					"price": "55"
+				},
+				{
+					"excursion": "7 castle",
+					"experience": "10 years",
+					"price": "59"
+				}
+				
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Nukus01.jpg",
+					"thumbnailImageSrc": "images/places/Nukus1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Nukus02.jpg",
+					"thumbnailImageSrc": "images/places/Nukus2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Nukus03.jpg",
+					"thumbnailImageSrc": "images/places/Nukus01.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "2 hours",
+			"description2": "2 hours",
+			"description3": "120 km"
 		}
 	]
 }

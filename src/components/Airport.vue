@@ -10,8 +10,8 @@
                     </Dialog>
                     <Button type="button" label="TRAVEL TO UZBEKISTAN" @click="toggle" class="p-button-success" />
                 </div>
-                <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false"
-                    :responsiveOptions="carouselResponsiveOptions">
+                <Carousel :value="products" :numVisible="3" :numScroll="1" 
+                    :responsiveOptions="carouselResponsiveOptions" class="custom-carousel" :circular="true" :autoplayInterval="3000">
                     <template #item="product">
                         <div class="product-item">
                             <div class="product-item-content">
@@ -57,7 +57,7 @@
                         :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
                         <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;">
                             <template #body="car">
-                                {{formatCurrency(car.data.name)}}
+                                {{(car.data.name)}}
                             </template>
                         </Column>
                         <Column header="Image" headerStyle="min-width:10rem;">
@@ -68,7 +68,7 @@
                         </Column>
                         <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
                             <template #body="car">
-                                ${{formatCurrency(car.data.price)}}
+                                ${{(car.data.price)}}
                             </template>
                         </Column>
                     </DataTable>
@@ -77,15 +77,15 @@
                 <Dialog header="Galleria" v-model:visible="display3" :breakpoints="{'960px': '100vw'}"
                     :style="{width: '50vw'}" :modal="true">
 
-                    <Galleria :value="galleria" :responsiveOptions="galleriaResponsiveOptions" :numVisible="7"
-                        :circular="true" containerStyle="max-width: 800px; margin: auto">
+                    <Galleria :value="galleria" :responsiveOptions="responsiveOptions" :numVisible="5" :circular="true"
+                        containerStyle="max-width: 960px" :showItemNavigators="true" :showThumbnails="false">
                         <template #item="slotProps">
                             <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
-                                style="width: 100%; display: block" />
+                                style="width: 100%; display: block;" />
                         </template>
                         <template #thumbnail="slotProps">
                             <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt"
-                                style="width: 100%; display: block;" />
+                                style="display: block;" />
                         </template>
                     </Galleria>
                 </Dialog>
@@ -123,17 +123,14 @@ import PhotoService from "../service/PhotoService";
 export default {
     data() {
         return {
-            count: 1,
             display: false,
             display2: false,
             display3: false,
             display4: false,
             displayConfirmation: false,
             products: [],
-            product: null,
             cars: [],
             galleria: [],
-            images: [],
             galleriaResponsiveOptions: [
                 {
                     breakpoint: "1024px",

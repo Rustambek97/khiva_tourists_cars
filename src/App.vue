@@ -51,7 +51,14 @@ export default {
 					label: 'Services', icon: 'pi pi-fw pi-sitemap',
 					items: [
                         {
-                            label: 'Travel places', icon: 'pi pi-building', to: '/travels',
+                            label: 'Travel places', icon: 'pi pi-building',
+                            items: [
+                                {label: 'The Ancient Fortresses', icon: 'pi pi-fw pi-bookmark', to: '/travels'},
+                                {label: 'Nukus and Muynak', icon: 'pi pi-fw pi-bookmark', to: '/travels_2'},
+                                {label: 'Khiva and Nukus', icon: 'pi pi-fw pi-bookmark', to: '/travels_3'},
+                                {label: "Khiva and Bukhara", icon: 'pi pi-fw pi-bookmark', to: '/travels_4'}
+                                
+                            ]
                         },
 						{
                             label: 'Cars', icon: 'pi pi-fw pi-car', to: '/cars',

@@ -1,32 +1,259 @@
 {
 	"data": [
 		{
-			"id": "1000",
+			"id": 1,
 			"name": "Day-trip to Three Castles",
 			"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva",
 			"image": "01.Крепость Кызыл-Кала.jpg",
-			"price": "34 for one car"
+			"price": "34 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "37"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "37"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "59"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "79"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "85"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "229"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 4-6 hours; Driving time is 2-3 hours; Driving Distance is 225 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. It is recommended to start the trip in the morning after breakfast. It takes about 90 minutes to arrive to the first Castle. After visiting all five fortresses, it is about 90 minutes to drive back to Khiva. Our driver may drop you off in Urgench Airport, Urgench / Khiva Train Station or in your hotel both in Khiva or Urgench at the end of the trip without any extra charge"
 		},
 		{
-			"id": "1001",
+			"id": 2,
 			"name": "Day-trip to Five Castles",
 			"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva",
 			"image": "02.Guldersan-Qala-Khorezm-Castles-Uzbekistan-3.jpg",
-			"price": "39 for one car"
+			"price": "39 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "39"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "39"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "69"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "89"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "95"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "249"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 5-7 hours; Driving time is 2-3 hours; Driving Distance is 240 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. It is recommended to start the trip in the morning after breakfast. It takes about 90 minutes to arrive to the first Castle. After visiting all five fortresses, it is about 90 minutes to drive back to Khiva. Our driver may drop you off in Urgench Airport, Urgench / Khiva Train Station or in your hotel both in Khiva or Urgench at the end of the trip without any extra charge"
+			
 		},
 		{
-			"id": "1002",
+			"id": 3,
 			"name": "Day-trip to Seven Castles",
 			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva",
 			"image": "03.Janbas.jpg",
-			"price": "44 for one car"
+			"price": "44 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "44"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "44"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "79"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "99"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "99"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "299"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 7-9 hours; Driving time is 3-4 hours; Driving Distance is 305 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. It is recommended to start the trip in the morning after breakfast. It takes about 90 minutes to arrive to the first Castle. After visiting all five fortresses, it is about 90 minutes to drive back to Khiva. Our driver may drop you off in Urgench Airport, Urgench / Khiva Train Station or in your hotel both in Khiva or Urgench at the end of the trip without any extra charge"
+			
 		},
 		{
-			"id": "1003",
+			"id": 4,
 			"name": "Day-trip to Ten Castles",
 			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva",
 			"image": "04.krepost.jpg",
-			"price": "49 for one car"
+			"price": "49 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "49"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "49"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "89"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "119"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "129"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "319"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 8-10 hours; Driving time is 4-5 hours; Driving Distance is 320 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. It is recommended to start the trip in the morning after breakfast. It takes about 90 minutes to arrive to the first Castle. After visiting all five fortresses, it is about 90 minutes to drive back to Khiva. Our driver may drop you off in Urgench Airport, Urgench / Khiva Train Station or in your hotel both in Khiva or Urgench at the end of the trip without any extra charge"
+	
 		}
 	]
 }

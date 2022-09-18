@@ -1,32 +1,260 @@
 {
 	"data": [
 		{
-			"id": "1000",
+			"id": 1,
 			"name": "Khiva - Two Castles - Bukhara",
 			"description": "Khiva-> Dumon Kala -> Guldursun Kala -> Bukhara",
 			"image": "41. Guldursun-kala.jpg",
-			"price": "69 for one car"
+			"price": "69 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "69"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "69"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "159"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "189"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "269"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "639"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 7-8 hours; Driving time is 6-7 hours; Driving Distance is 580km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from your place in Khiva or Urgench with our driver and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast around 8-9 am. It takes about 90 minutes to drive from Khiva to the first Castle – Dumon Kala. After visiting Guldursun Kala it is about 4-5 hours to drive from Guldursun Kala to Bukhara through Kizilkum Desert. please feel free to stop in any place during the trip to have a break, to take photo or other reasons. Our driver will drop you off in your hotel, airport or train station in Bukhara and will end the trip."
+			
 		},
 		{
-			"id": "1001",
+			"id": 2,
 			"name": "Khiva - Five Castles - Bukhara",
 			"description": "Khiva-> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Dumon Kala -> Guldursun Kala -> Bukhara",
 			"image": "42. Bukhara.jpg",
-			"price": "79 for one car"
+			"price": "79 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "79"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "79"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "179"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "219"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "339"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "739"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 8-10 hours; Driving time is 6-7 hours; Driving Distance is 640km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from your place in Khiva or Urgench with our driver and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast around 8-9 am. It takes about 90 minutes to drive from Khiva to the first Castle – Kizil Kala. After visiting all fortresses it is about 4-5 hours drive from Guldursun Kala to Bukhara through Kizilkum Desert. Our driver will drop you off in your hotel, airport or train station in Bukhara and will end the trip."
+			
 		},
 		{
-			"id": "1002",
+			"id": 3,
 			"name": "Bukhara - Two Castles - Khiva",
 			"description": "Bukhara -> Guldursun Kala -> Dumon Kala -> Khiva",
 			"image": "43. Bukhara.jpg",
-			"price": "69 for one car"
+			"price": "69 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "69"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "69"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "159"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "189"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "269"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "639"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 7-8 hours; Driving time is 6-7 hours; Driving Distance is 580km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from your place in Bukhara with our driver and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast around 8-9 am. It takes about 4-5 hours to drive from Bukhara to the first Castle – Guldursun Kala. After visiting both fortresses it is about 90 minutes to drive from Dumon Kala to Khiva. Our driver will drop you off in your hotel, airport or train station and will end the trip."
+			
 		},
 		{
-			"id": "1003",
+			"id": 4,
 			"name": "Bukhara - Five Castles - Khiva",
 			"description": "Bukhara -> Guldursun Kala -> Dumon Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva",
 			"image": "44.Khiva.jpg",
-			"price": "79 for one car"
+			"price": "79 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "79"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "79"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "179"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "219"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "339"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "739"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 8-10 hours; Driving time is 6-7 hours; Driving Distance is 640km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from your place in Bukhara with our driver and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast around 8-9 am. It takes about 4-5 hours to drive from Bukhara to the first Castle – Guldursun Kala. After visiting both fortresses it is about 90 minutes to drive from Dumon Kala to Khiva. Our driver will drop you off in your hotel, airport or train station and will end the trip."
+			
 		}
 	]
 }

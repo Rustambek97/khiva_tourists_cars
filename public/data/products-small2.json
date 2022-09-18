@@ -1,32 +1,259 @@
 {
 	"data": [
 		{
-			"id": "1000",
+			"id": 1,
 			"name": "Day-Trip to Kalajik Kala & Salty Lake ",
 			"description": "Khiva -> Chodra Hauli -> Ulli Hovli -> Kalajik Kala & Salty Lake  -> Khiva",
 			"image": "11.Kalajik kala.jpg",
-			"price": "24 for one car"
+			"price": "24 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "24"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "24"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "39"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "69"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "89"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "189"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": " Daytrip Duration is 3-5 hours; Driving time is 2-3 hours; Driving Distance is 120 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast or in the in the afternoon after lunch while it is a half day trip. It takes about 20 minutes to drive from Khiva to the first destination Chodra Hauli - Khan’s Summer Residence. It is located on the east side of Khiva. The building has its own shape and was built in 1871 by Muhammad Rakhim Khan as a summer residence. The four-story 30-meter building is reminiscent of a minaret with its own design. Apart from design, the building has a relatively small base, is 16 m. x 8 m. There is a storage room and two warehouses in the basement. The first and second floors were served in the room. It is about 90 minutes to drive from Kalajik Kala to Khiva. We may drop you off in your hotel or train station at the end of the trip."
+			
 		},
 		{
-			"id": "1001",
+			"id": 2,
 			"name": "Nukus Day-Trip stars & ends in Khiva",
 			"description": "Khiva -> Chilpik Kala -> Nukus Art Museum -> Mizdakhan Necropolis  -> Khiva",
 			"image": "12.Chilpik kala.jpg",
-			"price": "59 for one car"
+			"price": "59 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "59"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "59"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "119"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "159"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "239"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "469"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 8-12 hours; Driving time is 6-7 hours; Driving Distance is 480 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "Our driver picks you up from your hotel, Train Station or Airport both in Khiva or Urgench and starts the daytrip. It is recommended to start the daytrip in the morning after having your breakfast around 8-9 a.m. After visiting Mizdakhan Necropolis, it takes about 3 hours to drive back to Khiva or Urgench from Mizdakhan. We may drop you off in Urgench Airport, Urgench / Khiva Train Station or in your hotel both in Khiva or Urgench at the end of the trip and finish the trip."
 		},
 		{
-			"id": "1002",
+			"id": 3,
 			"name": "Muynak Day-Trip stars & ends in Khiva",
 			"description": "Khiva -> Chilpik Kala -> Nukus Art Museum -> Mizdakhan Necropolis  -> Aral Sea Museum -> Muynak Ship Cemetery -> Khiva",
 			"image": "13.Nukus art museum.jpg",
-			"price": "79 for one car"
+			"price": "79 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "89"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "89"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "199"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "289"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "329"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "989"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 14-16 hours; Driving time is 10-12 hours; Driving Distance is 810 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "It is about 90 minutes to drive to the first place – Chilpik Kala. It is a Dakhma or Tower of Silence which was used by people of the Zoroastrian faith for exposure of the dead. The bodies were laid out under the open sky for the birds to eat. When the bones were cleared, families collected them and placed them in clay or stone ossuaries for burial. The building was originally constructed in the first centuries CE but saw a phase of rebuilding in the 7th - 8th centuries and again in the 9th - 10th centuries. It is a circular high-walled enclosure on an isolated peak overlooking the Amudarya River… After visiting Muynak Ship Cemetery, it is about 5-6 hours to drive back to Khiva or Urgench, We may drop you off in Urgench Airport, Urgench / Khiva Train Station or in your hotel both in Khiva or Urgench at the end of the trip."
 		},
 		{
-			"id": "1003",
+			"id": 4,
 			"name": "Muynak Day-Trip stars & ends in Nukus",
 			"description": "Nukus -> Nukus Art Museum -> Mizdakhan Necropolis  -> Aral Sea Museum -> Muynak Ship Cemetery -> Nukus",
 			"image": "14.Mizdakhan.jpg",
-			"price": "59 for one car"
+			"price": "59 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "69"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "69"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "129"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "159"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "239"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "369"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 8-10 hours; Driving time is 6-7 hours; Driving Distance is 430 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "Our driver picks you up from your hotel, Nukus Airport or Train Station start the Daytrip. First place to stop and visit is Nukus Art Museum. You are advised to spend 2-3 hours there. The Karakalpak State Museum of Art named after Igor Savitsky, also houses a world-famous collection of Russian and Soviet avant-garde paintings. The collection was assembled by an eccentric Ukrainian artist who had been invited to come and work in Nukus… After visiting Muynak Ship Cemetery it is about another 3 hours to drive back to Nukus from. We may drop you off in Nukus Airport / Train Station or in your hotel and end the trip."
+	
+			
 		}
 	]
 }

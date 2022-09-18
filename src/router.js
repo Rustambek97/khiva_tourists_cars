@@ -18,6 +18,21 @@ const routes = [
                 component: () => import('./components/Travels.vue')
             },
             {
+                path: '/travels_2',
+                name: 'travels_2',
+                component: () => import('./components/Travels_2.vue')
+            },
+            {
+                path: '/travels_3',
+                name: 'travels_3',
+                component: () => import('./components/Travels_3.vue')
+            },
+            {
+                path: '/travels_4',
+                name: 'travels_4',
+                component: () => import('./components/Travels_4.vue')
+            },
+            {
                 path: '/cars',
                 name: 'cars',
                 component: () => import('./components/Cars.vue')

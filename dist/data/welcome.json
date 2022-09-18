@@ -197,6 +197,68 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
+					"price": "29"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "29"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "69"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "99"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "139"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "299"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Nukus01.jpg",
+					"thumbnailImageSrc": "images/places/Nukus1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Nukus02.jpg",
+					"thumbnailImageSrc": "images/places/Nukus2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Nukus03.jpg",
+					"thumbnailImageSrc": "images/places/Nukus01.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "2 hours",
+			"description2": "2 hours",
+			"description3": "120 km"
+		},
+		{
+			"id": 4,
+			"name": "Nukus",
+			"description": "Khiva <-> Nukus",
+			"image": "Nukus.jpg",
+			"price": "39 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
 					"price": "39"
 				},
 				{

@@ -15,12 +15,12 @@
 			<i class="pi pi-ellipsis-v"></i>
 		</button>
 		<ul class="layout-topbar-menu hidden lg:flex origin-top">
-			<li>
+			<!-- <li>
 				<h5 style="margin: 0.75rem">Select language</h5>
 			</li>
 			<li>
 				<Dropdown v-model="dropdownValue" :options="dropdownValues" optionLabel="name" placeholder="ENG" />
-			</li>
+			</li> -->
 			<li>
 				<button class="p-link layout-topbar-button">
 					<i class="pi pi-sun"></i>

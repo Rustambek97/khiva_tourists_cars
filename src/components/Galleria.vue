@@ -2,15 +2,26 @@
     <div class="grid p-fluid">
         <div class="col-12">
             <div class="card">
-                <h5>Galleria</h5>
-                <Galleria :value="images" :responsiveOptions="galleriaResponsiveOptions" :numVisible="7" :circular="true" containerStyle="max-width: 800px; margin: auto">
+                <h3>GALLERIA</h3>
+                <Galleria :value="products" v-model:activeIndex="activeIndex" :responsiveOptions="responsiveOptions"
+                    :numVisible="7" containerStyle="max-width: 850px" :circular="true" :fullScreen="true"
+                    :showItemNavigators="true" :showThumbnails="false" v-model:visible="displayCustom">
                     <template #item="slotProps">
-                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt" style="width: 100%; display: block" />
+                        <img :src="slotProps.item.itemImageSrc" :alt="slotProps.item.alt"
+                            style="width: 100%; display: block;" />
                     </template>
-                    <!-- <template #thumbnail="slotProps">
-                        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt" tyle="width: 100%; display: block;" />
-                    </template> -->
+                    <template #thumbnail="slotProps">
+                        <img :src="slotProps.item.thumbnailImageSrc" :alt="slotProps.item.alt"
+                            style="display: block;" />
+                    </template>
                 </Galleria>
+
+                <div v-if="products" class="grid" style="max-width: 1100px;">
+                    <div v-for="(image, index) of products" class="col-2" :key="index">
+                        <img :src="image.thumbnailImageSrc" :alt="image.alt" style="cursor: pointer"
+                            @click="imageClick(index)" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -18,12 +29,13 @@
 
 <script>
 import ProductService from "../service/ProductService";
-import PhotoService from "../service/PhotoService";
+
 export default {
     data() {
         return {
             products: [],
-            images: [],
+            images: null,
+            activeIndex: 0,
             galleriaResponsiveOptions: [
                 {
                     breakpoint: "1024px",
@@ -59,20 +71,25 @@ export default {
                     numScroll: 1,
                 },
             ],
+            displayBasic: false,
+            displayBasic2: false,
+            displayCustom: false
         };
     },
     created() {
         this.productService = new ProductService();
-        this.photoService = new PhotoService();
     },
     mounted() {
-        this.productService.getProductsSmall().then((products) => {
+        this.productService.getGalleria().then((products) => {
             this.products = products;
         });
-        this.photoService.getImages().then((images) => {
-            this.images = images;
-        });
     },
+    methods: {
+        imageClick(index) {
+            this.activeIndex = index;
+            this.displayCustom = true;
+        }
+    }
 };
 </script>
 

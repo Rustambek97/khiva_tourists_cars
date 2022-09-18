@@ -2,41 +2,32 @@
 	<div class="layout-footer">
 		<img alt="Logo" :src="footerImage()" height="80" />
 		
+		
+    <div class="layout-config-content">
+			<div class="config-scale">
 				<a href="https://www.gmail.com/">
 					<i class="pi pi-at "></i>
-					
 				</a>
-
 				<a href="https://www.instagram.com/adventuretour.uz/">
 					<i class="pi pi-instagram icon"></i>
-			
 				</a>
-	
 				<a href="">
 					<i class="pi pi-whatsapp icon"></i>
-				
 				</a>
-
 				<a href="https://www.facebook.com/Adventuretour/">
 					<i class="pi pi-facebook"></i>
-				
 				</a>
-			
 				<a href="@adventuretour_uz">
 					<i class="pi pi-telegram icon"></i>
-				
 				</a>
-
 				<a href="https://twitter.com/">
 					<i class="pi pi-twitter icon"></i>
-		
 				</a>
-	
 				<a href="tel:998975131999">
 					<i class="pi pi-phone"></i>
-				
 				</a>
-
+			</div>
+		</div>
 		<!-- Footer -->
   </div>
 </template>

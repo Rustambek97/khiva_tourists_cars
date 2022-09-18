@@ -12,8 +12,8 @@ export default class ProductService {
 	getProductsSmall4() {
 		return fetch('data/products-small4.json').then(res => res.json()).then(d => d.data);
 	}
-	getProductsSmall5() {
-		return fetch('data/products-small5.json').then(res => res.json()).then(d => d.data);
+	getGalleria() {
+		return fetch('data/galleria.json').then(res => res.json()).then(d => d.data);
 	}
 
 	getCars() {

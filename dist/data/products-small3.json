@@ -1,32 +1,260 @@
 {
 	"data": [
 		{
-			"id": "1000",
+			"id": 1,
 			"name": "Khiva - Chilpik Kala - Nukus",
 			"description": "Khiva-> Chilpik Kala -> Nukus",
 			"image": "31.Nukus.jpg",
-			"price": "44 for one car"
+			"price": "44 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "44"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "44"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "94"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "129"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "169"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "349"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 3-4 hours; Driving time is 2-3 hours; Driving Distance is 225 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast or I the afternoon after lunch. It takes about two hour to drive from Khiva to the Chilpik Kala. It takes about 40 minutes to drive from Chilpik Kala to Nukus. We may drop you off in Nukus Airport / Train Station or in your hotel at the end of the trip and will finish the tour."
+			
 		},
 		{
-			"id": "1001",
+			"id": 2,
 			"name": "Khiva - Three Castles - Nukus ",
 			"description": "Khiva-> Jampik Kala -> Gyaur Kala -> Chilpik Kala -> Nukus",
 			"image": "32.Jampik kala.jpg",
-			"price": "59 for one car"
+			"price": "59 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "59"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "59"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "134"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "159"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "199"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "469"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 7-9 hours; Driving time is 4-5 hours; Driving Distance is 265 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast. It takes about two hour to drive from Khiva to the first fortress. After visiting all three fortresses, it is about 60 minutes to drive from Chilpik Kala to Nukus. Our driver may drop you off in Nukus Airport / Train Station or in your hotel on Nukus and end the trip."
+	
 		},
 		{
-			"id": "1002",
+			"id": 3,
 			"name": "Khiva - Four Castles - Nukus ",
 			"description": "Khiva-> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Chilpik Kala -> Nukus",
 			"image": "33.toprak-kala1.jpg",
-			"price": "59 for one car"
+			"price": "59 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "59"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "59"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "124"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "149"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "189"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "449"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 7-9 hours; Driving time is 4-5 hours; Driving Distance is 320 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast. It takes about 90 minutes to drive from Khiva to the first Castle – Ayaz Kala. This is the end of the Daytrip. It takes about 40 minutes to drive from Chilpik Kala to Nukus. We may drop you off in Nukus Airport / Train Station or in your hotel at the end of the trip."
+	
 		},
 		{
-			"id": "1003",
+			"id": 4,
 			"name": "Khiva - Six Castles - Nukus ",
 			"description": "Khiva-> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Jampik Kala -> Gyaur Kala -> Chilpik Kala -> Nukus",
 			"image": "34.gyaur kala1.jpg",
-			"price": "69 for one car"
+			"price": "69 for one car",
+			"cars": [
+				{
+					"name": "Cobalt",
+					"image": "Cobalt_hd.jpeg",
+					"price": "69"
+				},
+				{
+					"name": "Gentra",
+					"image": "Gentra.jpg",
+					"price": "69"
+				},
+				{
+					"name": "Captiva",
+					"image": "Captiva_hd.jpg",
+					"price": "154"
+				},
+				{
+					"name": "Minivan",
+					"image": "hyundai-h1_hd.png",
+					"price": "189"
+				},
+				{
+					"name": "Minibus",
+					"image": "Minibus.jpeg",
+					"price": "239"
+				},
+				{
+					"name": "Bus",
+					"image": "Yutong hd.jpg",
+					"price": "599"
+				}
+			],
+			"galleria": [
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch02.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch03.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				}
+			],
+			"description1": "Daytrip Duration is 8-10 hours; Driving time is 5-6 hours; Driving Distance is 360 km.",
+			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
+			"description3": "Entrance tickets of the sites, meals and etc.",
+			"description4": "We pick you up from Airport / Train Station or your hotel both in Khiva or Urgench and start the Daytrip. You can start the Daytrip at any time of the day. It is recommended to start the trip in the morning after breakfast. It takes about 90 minutes to drive from Khiva to the first Castle – Ayaz Kala. This is the end of the Daytrip. It takes about 40 minutes to drive from Chilpik Kala to Nukus. We may drop you off in Nukus Airport / Train Station or in your hotel at the end of the trip and will finish the tour."
+	
 		}
 	]
 }
