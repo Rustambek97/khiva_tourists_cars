@@ -9,13 +9,13 @@ const routes = [
         children: [
             {
                 path: '/',
-                name: 'airport',
-                component: () => import('./components/Airport.vue')
-            },
-            {
-                path: '/travels',
                 name: 'travels',
                 component: () => import('./components/Travels.vue')
+            },
+            {
+                path: '/airport',
+                name: 'airport',
+                component: () => import('./components/Airport.vue')
             },
             {
                 path: '/travels_2',

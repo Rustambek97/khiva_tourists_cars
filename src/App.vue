@@ -40,7 +40,7 @@ export default {
                         
                         label: 'Travel places', icon: 'pi pi-fw pi-home',
                             items: [
-                                {label: 'The Ancient Fortresses', icon: 'pi pi-fw pi-bookmark', to: '/travels'},
+                                {label: 'The Ancient Fortresses', icon: 'pi pi-fw pi-bookmark', to: '/'},
                                 {label: 'Nukus and Muynak', icon: 'pi pi-fw pi-bookmark', to: '/travels_2'},
                                 {label: 'Khiva and Nukus', icon: 'pi pi-fw pi-bookmark', to: '/travels_3'},
                                 {label: "Khiva and Bukhara", icon: 'pi pi-fw pi-bookmark', to: '/travels_4'}
@@ -52,7 +52,7 @@ export default {
 					label: 'Services', icon: 'pi pi-fw pi-sitemap',
 					items: [
                         {
-                            label: 'Travel to Uzbekistan', icon: 'pi pi-building', to: '/',
+                            label: 'Travel to Uzbekistan', icon: 'pi pi-building', to: '/airport',
                             // items: [
                             //     {label: 'The Ancient Fortresses', icon: 'pi pi-fw pi-bookmark', to: '/travels'},
                             //     {label: 'Nukus and Muynak', icon: 'pi pi-fw pi-bookmark', to: '/travels_2'},

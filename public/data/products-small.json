@@ -311,7 +311,7 @@
 			"id": 4,
 			"name": "Day-trip to Ten Castles",
 			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva",
-			"image": "037.jpg",
+			"image": "049.jpg",
 			"price": "49 for one car",
 			"cars": [
 				{
@@ -359,43 +359,61 @@
 			],
 			"galleria": [
 				{
-					"itemImageSrc": "images/product/030.jpg",
+					"itemImageSrc": "images/product/038.jpg",
 					"thumbnailImageSrc": "images/places/Urganch1.jpg",
 					"alt": "Description for Image 1",
 					"title": "Title 1"
 				},
 				{
-					"itemImageSrc": "images/product/031.jpg",
+					"itemImageSrc": "images/product/039.jpg",
 					"thumbnailImageSrc": "images/places/Urganch2.jpg",
 					"alt": "Description for Image 2",
 					"title": "Title 2"
 				},
 				{
-					"itemImageSrc": "images/product/032.jpg",
+					"itemImageSrc": "images/product/040.jpg",
 					"thumbnailImageSrc": "images/places/Urganch3.jpg",
 					"alt": "Description for Image 3",
 					"title": "Title 3"
 				},
 				{
-					"itemImageSrc": "images/product/033.jpg",
+					"itemImageSrc": "images/product/041.jpg",
 					"thumbnailImageSrc": "images/places/Urganch3.jpg",
 					"alt": "Description for Image 3",
 					"title": "Title 3"
 				},
 				{
-					"itemImageSrc": "images/product/034.jpg",
+					"itemImageSrc": "images/product/042.jpg",
 					"thumbnailImageSrc": "images/places/Urganch1.jpg",
 					"alt": "Description for Image 1",
 					"title": "Title 1"
 				},
 				{
-					"itemImageSrc": "images/product/035.jpg",
+					"itemImageSrc": "images/product/043.jpg",
 					"thumbnailImageSrc": "images/places/Urganch2.jpg",
 					"alt": "Description for Image 2",
 					"title": "Title 2"
 				},
 				{
-					"itemImageSrc": "images/product/037.jpg",
+					"itemImageSrc": "images/product/044.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/045.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/046.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/047.jpg",
 					"thumbnailImageSrc": "images/places/Urganch3.jpg",
 					"alt": "Description for Image 3",
 					"title": "Title 3"
