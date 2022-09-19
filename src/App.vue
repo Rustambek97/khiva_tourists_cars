@@ -37,21 +37,8 @@ export default {
                 {
                     label: 'Home',
                     items: [{
-                        label: 'Travel to Uzbekistan', icon: 'pi pi-fw pi-home', to: '/',
-                        // items: [
-                        //         {label: 'About place', icon: 'pi pi-fw pi-bookmark',},
-                        //         {label: 'Place maps', icon: 'pi pi-fw pi-bookmark',},
-                        //         {label: "Cars table", icon: 'pi pi-fw pi-bookmark',},
-                        //         {label: 'Place photos', icon: 'pi pi-fw pi-bookmark',},
-                        //         {label: 'Call us', icon: 'pi pi-fw pi-bookmark',},
-                        //     ]
-                    }]
-                },
-				{
-					label: 'Services', icon: 'pi pi-fw pi-sitemap',
-					items: [
-                        {
-                            label: 'Travel places', icon: 'pi pi-building',
+                        
+                        label: 'Travel places', icon: 'pi pi-fw pi-home',
                             items: [
                                 {label: 'The Ancient Fortresses', icon: 'pi pi-fw pi-bookmark', to: '/travels'},
                                 {label: 'Nukus and Muynak', icon: 'pi pi-fw pi-bookmark', to: '/travels_2'},
@@ -59,6 +46,20 @@ export default {
                                 {label: "Khiva and Bukhara", icon: 'pi pi-fw pi-bookmark', to: '/travels_4'}
                                 
                             ]
+                    }]
+                },
+				{
+					label: 'Services', icon: 'pi pi-fw pi-sitemap',
+					items: [
+                        {
+                            label: 'Travel to Uzbekistan', icon: 'pi pi-building', to: '/',
+                            // items: [
+                            //     {label: 'The Ancient Fortresses', icon: 'pi pi-fw pi-bookmark', to: '/travels'},
+                            //     {label: 'Nukus and Muynak', icon: 'pi pi-fw pi-bookmark', to: '/travels_2'},
+                            //     {label: 'Khiva and Nukus', icon: 'pi pi-fw pi-bookmark', to: '/travels_3'},
+                            //     {label: "Khiva and Bukhara", icon: 'pi pi-fw pi-bookmark', to: '/travels_4'}
+                                
+                            // ]
                         },
 						{
                             label: 'Cars', icon: 'pi pi-fw pi-car', to: '/cars',

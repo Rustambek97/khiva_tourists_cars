@@ -2,7 +2,7 @@
     <div class="grid p-fluid">
         <div class="col-12">
             <div class="card">
-                <h2 style="text-align:center">Guide for Travel</h2>
+                <h3 style="text-align:center">Guide for Travel</h3>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false"
                     :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">

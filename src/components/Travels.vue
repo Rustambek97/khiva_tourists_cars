@@ -4,7 +4,7 @@
             <div class="card">
                 <!-- one -->
                 
-                <h2 style="text-align:center">Private Round Day-Trips from Khiva to The Ancient Fortresses</h2>
+                <h3 style="text-align:center">Private Round Day-Trips from Khiva to The Ancient Fortresses</h3>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false"
                     :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">
@@ -56,7 +56,7 @@
                         :paginator="true" :rows="5" @row-select="onProductSelect" responsiveLayout="scroll">
                         <Column field="name" header="Name" :sortable="true" headerStyle="min-width:10rem;">
                             <template #body="car">
-                                {{formatCurrency(car.data.name)}}
+                                {{car.data.name}}
                             </template>
                         </Column>
                         <Column header="Image" headerStyle="min-width:10rem;">
@@ -67,7 +67,12 @@
                         </Column>
                         <Column field="price" header="Price" :sortable="true" headerStyle="min-width:8rem;">
                             <template #body="car">
-                                ${{formatCurrency(car.data.price)}}
+                                ${{car.data.price}}
+                            </template>
+                        </Column>
+                        <Column field="price" header="Places" :sortable="true" headerStyle="min-width:8rem;">
+                            <template #body="car">
+                                {{car.data.description}}
                             </template>
                         </Column>
                     </DataTable>

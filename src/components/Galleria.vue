@@ -2,7 +2,7 @@
     <div class="grid p-fluid">
         <div class="col-12">
             <div class="card">
-                <h3>GALLERIA</h3>
+                <h3 style="text-align:center">GALLERIA</h3>
                 <Galleria :value="products" v-model:activeIndex="activeIndex" :responsiveOptions="responsiveOptions"
                     :numVisible="7" containerStyle="max-width: 850px" :circular="true" :fullScreen="true"
                     :showItemNavigators="true" :showThumbnails="false" v-model:visible="displayCustom">
@@ -16,8 +16,8 @@
                     </template>
                 </Galleria>
 
-                <div v-if="products" class="grid" style="max-width: 1100px;">
-                    <div v-for="(image, index) of products" class="col-2" :key="index">
+                <div v-if="products" class="grid" style="max-width: 100%;">
+                    <div v-for="(image, index) of products" class="col-1" :key="index">
                         <img :src="image.thumbnailImageSrc" :alt="image.alt" style="cursor: pointer"
                             @click="imageClick(index)" />
                     </div>

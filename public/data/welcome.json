@@ -10,46 +10,52 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "12"
+					"price": "12",
+					"description": "Khiva <-> Urganch airport"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "12"
+					"price": "12",
+					"description": "Khiva <-> Urganch airport"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "25"
+					"price": "25",
+					"description": "Khiva <-> Urganch airport"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "35"
+					"price": "35",
+					"description": "Khiva <-> Urganch airport"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "39"
+					"price": "39",
+					"description": "Khiva <-> Urganch airport"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "89"
+					"price": "89",
+					"description": "Khiva <-> Urganch airport"
 				}
 			],
 			"galleria": [
-				{
-					"itemImageSrc": "images/places/Urganch01.jpg",
-					"thumbnailImageSrc": "images/places/Urganch1.jpg",
-					"alt": "Description for Image 1",
-					"title": "Title 1"
-				},
 				{
 					"itemImageSrc": "images/places/Urganch02.jpg",
 					"thumbnailImageSrc": "images/places/Urganch2.jpg",
 					"alt": "Description for Image 2",
 					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
 				},
 				{
 					"itemImageSrc": "images/places/Urganch03.jpg",
@@ -73,50 +79,56 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "12"
+					"price": "12",
+					"description": "Khiva <-> Urganch railway station"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "12"
+					"price": "12",
+					"description": "Khiva <-> Urganch railway station"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "30"
+					"price": "30",
+					"description": "Khiva <-> Urganch railway station"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "35"
+					"price": "35",
+					"description": "Khiva <-> Urganch railway station"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "39"
+					"price": "39",
+					"description": "Khiva <-> Urganch railway station"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "89"
+					"price": "89",
+					"description": "Khiva <-> Urganch railway station"
 				}
 			],
 			"galleria": [
 				{
-					"itemImageSrc": "images/places/Urganch01.jpg",
-					"thumbnailImageSrc": "images/places/Urganch1.jpg",
-					"alt": "Description for Image 1",
-					"title": "Title 1"
-				},
-				{
 					"itemImageSrc": "images/places/Urganch02.jpg",
-					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"thumbnailImageSrc": "images/picture/Urganch02.jpg",
 					"alt": "Description for Image 2",
 					"title": "Title 2"
 				},
 				{
+					"itemImageSrc": "images/places/Urganch01.jpg",
+					"thumbnailImageSrc": "images/picture/Urganch01.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
 					"itemImageSrc": "images/places/Urganch03.jpg",
-					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"thumbnailImageSrc": "images/picture/Urganch03.jpg",
 					"alt": "Description for Image 3",
 					"title": "Title 3"
 				}
@@ -135,32 +147,38 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "5"
+					"price": "5",
+					"description": "Khiva <-> Khiva railway station"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "5"
+					"price": "5",
+					"description": "Khiva <-> Khiva railway station"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "15"
+					"price": "15",
+					"description": "Khiva <-> Khiva railway station"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "15"
+					"price": "15",
+					"description": "Khiva <-> Khiva railway station"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "18"
+					"price": "18",
+					"description": "Khiva <-> Khiva railway station"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "39"
+					"price": "39",
+					"description": "Khiva <-> Khiva railway station"
 				}
 			],
 			"galleria": [
@@ -197,94 +215,38 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "29"
+					"price": "39",
+					"description": "Khiva <-> Nukus"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "29"
+					"price": "39",
+					"description": "Khiva <-> Nukus"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "69"
+					"price": "89",
+					"description": "Khiva <-> Nukus"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "99"
+					"price": "119",
+					"description": "Khiva <-> Nukus"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "139"
+					"price": "159",
+					"description": "Khiva <-> Nukus"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "299"
-				}
-			],
-			"galleria": [
-				{
-					"itemImageSrc": "images/places/Nukus01.jpg",
-					"thumbnailImageSrc": "images/places/Nukus1.jpg",
-					"alt": "Description for Image 1",
-					"title": "Title 1"
-				},
-				{
-					"itemImageSrc": "images/places/Nukus02.jpg",
-					"thumbnailImageSrc": "images/places/Nukus2.jpg",
-					"alt": "Description for Image 2",
-					"title": "Title 2"
-				},
-				{
-					"itemImageSrc": "images/places/Nukus03.jpg",
-					"thumbnailImageSrc": "images/places/Nukus01.jpg",
-					"alt": "Description for Image 3",
-					"title": "Title 3"
-				}
-			],
-			"description1": "2 hours",
-			"description2": "2 hours",
-			"description3": "120 km"
-		},
-		{
-			"id": 4,
-			"name": "Nukus",
-			"description": "Khiva <-> Nukus",
-			"image": "Nukus.jpg",
-			"price": "39 for one car",
-			"cars": [
-				{
-					"name": "Cobalt",
-					"image": "Cobalt_hd.jpeg",
-					"price": "39"
-				},
-				{
-					"name": "Gentra",
-					"image": "Gentra.jpg",
-					"price": "39"
-				},
-				{
-					"name": "Captiva",
-					"image": "Captiva_hd.jpg",
-					"price": "89"
-				},
-				{
-					"name": "Minivan",
-					"image": "hyundai-h1_hd.png",
-					"price": "119"
-				},
-				{
-					"name": "Minibus",
-					"image": "Minibus.jpeg",
-					"price": "159"
-				},
-				{
-					"name": "Bus",
-					"image": "Yutong hd.jpg",
-					"price": "329"
+					"price": "329",
+					"description": "Khiva <-> Nukus"
 				}
 			],
 			"galleria": [
@@ -321,32 +283,38 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "109"
+					"price": "109",
+					"description": "Khiva <-> Bukhara"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "109"
+					"price": "109",
+					"description": "Khiva <-> Bukhara"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "139"
+					"price": "139",
+					"description": "Khiva <-> Bukhara"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "159"
+					"price": "159",
+					"description": "Khiva <-> Bukhara"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "229"
+					"price": "229",
+					"description": "Khiva <-> Bukhara"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "539"
+					"price": "539",
+					"description": "Khiva <-> Bukhara"
 				}
 			],
 			"galleria": [
@@ -383,32 +351,38 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "109"
+					"price": "109",
+					"description": "Bukhara <-> Samarkand"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "109"
+					"price": "109",
+					"description": "Bukhara <-> Samarkand"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "139"
+					"price": "139",
+					"description": "Bukhara <-> Samarkand"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "159"
+					"price": "159",
+					"description": "Bukhara <-> Samarkand"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "229"
+					"price": "229",
+					"description": "Bukhara <-> Samarkand"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "519"
+					"price": "519",
+					"description": "Bukhara <-> Samarkand"
 				}
 			],
 			"galleria": [
@@ -445,32 +419,38 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "129"
+					"price": "129",
+					"description": "Bukhara <-> Shakhrisabz <-> Samarkand"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "129"
+					"price": "129",
+					"description": "Bukhara <-> Shakhrisabz <-> Samarkand"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "159"
+					"price": "159",
+					"description": "Bukhara <-> Shakhrisabz <-> Samarkand"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "189"
+					"price": "189",
+					"description": "Bukhara <-> Shakhrisabz <-> Samarkand"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "269"
+					"price": "269",
+					"description": "Bukhara <-> Shakhrisabz <-> Samarkand"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "619"
+					"price": "619",
+					"description": "Bukhara <-> Shakhrisabz <-> Samarkand"
 				}
 			],
 			"galleria": [
@@ -507,32 +487,38 @@
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "119"
+					"price": "119",
+					"description": "Samarkand <-> Tashkent"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "119"
+					"price": "119",
+					"description": "Samarkand <-> Tashkent"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "149"
+					"price": "149",
+					"description": "Samarkand <-> Tashkent"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "169"
+					"price": "169",
+					"description": "Samarkand <-> Tashkent"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "249"
+					"price": "249",
+					"description": "Samarkand <-> Tashkent"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "539"
+					"price": "539",
+					"description": "Samarkand <-> Tashkent"
 				}
 			],
 			"galleria": [

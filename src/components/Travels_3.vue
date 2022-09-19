@@ -5,7 +5,7 @@
                 
                 <!-- three -->
                 
-                    <h2 style="text-align:center">Private One-Way Day-Trips between Khiva and Nukus or reverse</h2>
+                    <h3 style="text-align:center">Private One-Way Day-Trips between Khiva and Nukus or reverse</h3>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false"
                     :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">

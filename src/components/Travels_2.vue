@@ -5,7 +5,7 @@
     
                 <!-- two -->
                
-                    <h2 style="text-align:center">Private Round Day-Trips from Khiva to Nukus and Muynak</h2>
+                    <h3 style="text-align:center">Private Round Day-Trips from Khiva to Nukus and Muynak</h3>
                 <Carousel :value="products" :numVisible="3" :numScroll="3" :circular="false"
                     :responsiveOptions="carouselResponsiveOptions">
                     <template #item="product">

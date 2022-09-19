@@ -71,6 +71,11 @@
                                 ${{(car.data.price)}}
                             </template>
                         </Column>
+                        <Column field="price" header="Places" :sortable="true" headerStyle="min-width:8rem;">
+                            <template #body="car">
+                                {{(car.data.description)}}
+                            </template>
+                        </Column>
                     </DataTable>
                 </Dialog>
 

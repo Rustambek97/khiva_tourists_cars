@@ -11,10 +11,10 @@
 				<a href="https://www.instagram.com/adventuretour.uz/">
 					<i class="pi pi-instagram icon"></i>
 				</a>
-				<a href="">
+				<a href="tel:998975131999">
 					<i class="pi pi-whatsapp icon"></i>
 				</a>
-				<a href="https://www.facebook.com/Adventuretour/">
+				<a href="https://www.facebook.com/profile.php?id=100085463902770">
 					<i class="pi pi-facebook"></i>
 				</a>
 				<a href="@adventuretour_uz">
@@ -26,7 +26,11 @@
 				<a href="tel:998975131999">
 					<i class="pi pi-phone"></i>
 				</a>
+				<a href="">
+					<img src="images/visa.png" alt="images/visa.png" height="40rem" width="50rem">
+				</a>
 			</div>
+			
 		</div>
 		<!-- Footer -->
   </div>

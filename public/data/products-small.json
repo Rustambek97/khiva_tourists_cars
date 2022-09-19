@@ -4,55 +4,97 @@
 			"id": 1,
 			"name": "Day-trip to Three Castles",
 			"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva",
-			"image": "01.Крепость Кызыл-Кала.jpg",
+			"image": "011.jpg",
 			"price": "34 for one car",
 			"cars": [
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "37"
+					"price": "37",
+					"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "37"
+					"price": "37",
+					"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "59"
+					"price": "59",
+					"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "79"
+					"price": "79",
+					"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "85"
+					"price": "85",
+					"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "229"
+					"price": "229",
+					"description": "Khiva <-> Ayaz Kala <-> Toprak Kala <-> Kizil Kala <-> Khiva"
 				}
 			],
 			"galleria": [
 				{
-					"itemImageSrc": "images/places/Urganch01.jpg",
+					"itemImageSrc": "images/product/012.jpg",
 					"thumbnailImageSrc": "images/places/Urganch1.jpg",
 					"alt": "Description for Image 1",
 					"title": "Title 1"
 				},
 				{
-					"itemImageSrc": "images/places/Urganch02.jpg",
+					"itemImageSrc": "images/product/013.jpg",
 					"thumbnailImageSrc": "images/places/Urganch2.jpg",
 					"alt": "Description for Image 2",
 					"title": "Title 2"
 				},
 				{
-					"itemImageSrc": "images/places/Urganch03.jpg",
+					"itemImageSrc": "images/product/014.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/015.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/016.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/product/017.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/product/018.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/019.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/020.jpg",
 					"thumbnailImageSrc": "images/places/Urganch3.jpg",
 					"alt": "Description for Image 3",
 					"title": "Title 3"
@@ -67,59 +109,96 @@
 			"id": 2,
 			"name": "Day-trip to Five Castles",
 			"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva",
-			"image": "02.Guldersan-Qala-Khorezm-Castles-Uzbekistan-3.jpg",
+			"image": "021.5castle.jpg",
 			"price": "39 for one car",
 			"cars": [
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "39"
+					"price": "39",
+					"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva"
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "39"
+					"price": "39",
+					"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva"
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "69"
+					"price": "69",
+					"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva"
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "89"
+					"price": "89",
+					"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva"
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "95"
+					"price": "95",
+					"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva"
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "249"
+					"price": "249",
+					"description": "Khiva -> Kizil Kala -> Toprak Kala -> Ayaz Kala -> Yekke Parsan -> Duman Kala -> Khiva"
 				}
 			],
 			"galleria": [
 				{
-					"itemImageSrc": "images/places/Urganch01.jpg",
+					"itemImageSrc": "images/product/022.jpg",
 					"thumbnailImageSrc": "images/places/Urganch1.jpg",
 					"alt": "Description for Image 1",
 					"title": "Title 1"
 				},
 				{
-					"itemImageSrc": "images/places/Urganch02.jpg",
+					"itemImageSrc": "images/product/023.jpg",
 					"thumbnailImageSrc": "images/places/Urganch2.jpg",
 					"alt": "Description for Image 2",
 					"title": "Title 2"
 				},
 				{
-					"itemImageSrc": "images/places/Urganch03.jpg",
+					"itemImageSrc": "images/product/024.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/025.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/026.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/product/027.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/product/028.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/029.jpg",
 					"thumbnailImageSrc": "images/places/Urganch3.jpg",
 					"alt": "Description for Image 3",
 					"title": "Title 3"
 				}
+			
 			],
 			"description1": "Daytrip Duration is 5-7 hours; Driving time is 2-3 hours; Driving Distance is 240 km.",
 			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
@@ -131,59 +210,96 @@
 			"id": 3,
 			"name": "Day-trip to Seven Castles",
 			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva",
-			"image": "03.Janbas.jpg",
+			"image": "036.jpg",
 			"price": "44 for one car",
 			"cars": [
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "44"
+					"price": "44",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "44"
+					"price": "44",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "79"
+					"price": "79",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "99"
+					"price": "99",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "99"
+					"price": "99",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "299"
+					"price": "299",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Angka Kala -> Janbas Kala -> Ayaz Kala -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				}
 			],
 			"galleria": [
 				{
-					"itemImageSrc": "images/places/Urganch01.jpg",
+					"itemImageSrc": "images/product/030.jpg",
 					"thumbnailImageSrc": "images/places/Urganch1.jpg",
 					"alt": "Description for Image 1",
 					"title": "Title 1"
 				},
 				{
-					"itemImageSrc": "images/places/Urganch02.jpg",
+					"itemImageSrc": "images/product/031.jpg",
 					"thumbnailImageSrc": "images/places/Urganch2.jpg",
 					"alt": "Description for Image 2",
 					"title": "Title 2"
 				},
 				{
-					"itemImageSrc": "images/places/Urganch03.jpg",
+					"itemImageSrc": "images/product/032.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/033.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/034.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/product/035.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/product/037.jpg",
 					"thumbnailImageSrc": "images/places/Urganch3.jpg",
 					"alt": "Description for Image 3",
 					"title": "Title 3"
 				}
+			
 			],
 			"description1": "Daytrip Duration is 7-9 hours; Driving time is 3-4 hours; Driving Distance is 305 km.",
 			"description2": "Brand new cars, fuel and a good driver with basic English & Russian",
@@ -195,55 +311,91 @@
 			"id": 4,
 			"name": "Day-trip to Ten Castles",
 			"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva",
-			"image": "04.krepost.jpg",
+			"image": "037.jpg",
 			"price": "49 for one car",
 			"cars": [
 				{
 					"name": "Cobalt",
 					"image": "Cobalt_hd.jpeg",
-					"price": "49"
+					"price": "49",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Gentra",
 					"image": "Gentra.jpg",
-					"price": "49"
+					"price": "49",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Captiva",
 					"image": "Captiva_hd.jpg",
-					"price": "89"
+					"price": "89",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Minivan",
 					"image": "hyundai-h1_hd.png",
-					"price": "119"
+					"price": "119",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Minibus",
 					"image": "Minibus.jpeg",
-					"price": "129"
+					"price": "129",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				},
 				{
 					"name": "Bus",
 					"image": "Yutong hd.jpg",
-					"price": "319"
+					"price": "319",
+					"description": "Khiva -> Dumon Kala -> Guldursun Kala -> Koykirilgan Kala -> Angka Kala -> Janbas Kala -> Big Kirkkiz Kala -> Ayaz Kala -> Yekke Parsan -> Toprak Kala -> Kizil Kala -> Khiva"
+		
 				}
 			],
 			"galleria": [
 				{
-					"itemImageSrc": "images/places/Urganch01.jpg",
+					"itemImageSrc": "images/product/030.jpg",
 					"thumbnailImageSrc": "images/places/Urganch1.jpg",
 					"alt": "Description for Image 1",
 					"title": "Title 1"
 				},
 				{
-					"itemImageSrc": "images/places/Urganch02.jpg",
+					"itemImageSrc": "images/product/031.jpg",
 					"thumbnailImageSrc": "images/places/Urganch2.jpg",
 					"alt": "Description for Image 2",
 					"title": "Title 2"
 				},
 				{
-					"itemImageSrc": "images/places/Urganch03.jpg",
+					"itemImageSrc": "images/product/032.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/033.jpg",
+					"thumbnailImageSrc": "images/places/Urganch3.jpg",
+					"alt": "Description for Image 3",
+					"title": "Title 3"
+				},
+				{
+					"itemImageSrc": "images/product/034.jpg",
+					"thumbnailImageSrc": "images/places/Urganch1.jpg",
+					"alt": "Description for Image 1",
+					"title": "Title 1"
+				},
+				{
+					"itemImageSrc": "images/product/035.jpg",
+					"thumbnailImageSrc": "images/places/Urganch2.jpg",
+					"alt": "Description for Image 2",
+					"title": "Title 2"
+				},
+				{
+					"itemImageSrc": "images/product/037.jpg",
 					"thumbnailImageSrc": "images/places/Urganch3.jpg",
 					"alt": "Description for Image 3",
 					"title": "Title 3"
